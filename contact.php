@@ -69,8 +69,8 @@
         <!-- BREADCRUMB NAVIGATION FOR ARIA USERS-->
         <main>
             <div class="text-center"><h1>Don't Bee a Stranger!</h1></div>
-            <form title="Contact Form" class="p-5 mb-3" 
-            action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="POST">
+            <form title="Contact Form" class="p-5 mb-3" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" 
+            method="POST" autocomplete="off">
                 <div><h2>Contact Us</h2></div>
                 <div class="form-floating" id="form-info">
                     <p><em>* All fields are required</em></p>
