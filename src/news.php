@@ -32,7 +32,7 @@ if (isset($_POST['password']) && ($_POST['password'] == $password)) {
                 <label for='password'>Password</label>
                 <input type='text' name='password' id='password' required aria-required='true'> 
             </div>
-            <button type="submit" name='submit'>Submit</button>
+            <button class='btn btn-light border-2 border-dark' type="submit" name='submit'>Submit</button>
         </form>
     </body>
 </html>
