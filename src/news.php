@@ -28,9 +28,10 @@ if (isset($_POST['password']) && ($_POST['password'] == $password)) {
 
     <body>
         <form title='login' method='POST' action='' autocomplete='off'>
-            <label for='password'>Password</label>
-            <input type='text' name='password' id='password' required aria-required='true'></input>
-            
+            <div>
+                <label for='password'>Password</label>
+                <input type='text' name='password' id='password' required aria-required='true'>
+            </div>
             <button type="submit" name='submit'>Submit</button>
         </form>
     </body>
