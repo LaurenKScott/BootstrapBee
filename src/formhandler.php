@@ -30,6 +30,9 @@
     }
     function validate($data) {
         $data = preg_replace('/[\s()-]/m', '', $data);
+        if ((strlen($data) == 11) && ($data[0] == '1')){
+            $data = substr($data, 1);
+        }
         if (!preg_match("/^[0-9]{10}$/", $data)) {
             return null;
         }else {
