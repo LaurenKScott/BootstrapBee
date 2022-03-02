@@ -8,7 +8,7 @@
     Busy Bee is an independently owned and operated child care center, providing the best quality
     education on the South Shore since 1989">
     <meta name="robots" content="index, follow">
-    <title>Contact Us - Busy Bee Child Care & Preschool</title>
+    <title>Portal - Busy Bee Child Care & Preschool</title>
     <link rel="icon" href="/assets/beeicontransparent.png">
     <!-- BOOTSTRAP STYLESHEET AND SCRIPT LINKS (CDN)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
@@ -33,7 +33,6 @@ if (isset($_POST['password'])) {
     $try_pass = validate($_POST['password']);
     if ($try_pass == $password) {
         $_SESSION['authenticated'] = true;
-        echo "<h2 style='color:green;'>Success!</h2>";
         header('Location: /src/inftod.html');
     }else {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {

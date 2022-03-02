@@ -91,8 +91,8 @@
                     <label for="email" class="form-label">Email Address</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" name="message"
-                    placeholder="Your message here" style="height:8rem;" required aria-required="true">
+                    <textarea class="form-control" id="message" name="message" style="height:8rem;" 
+                    required aria-required="true">
                     </textarea>
                     <label for="message" class="form-label">Message</label>
                 </div>
