@@ -16,16 +16,31 @@
 </head>
 <?php 
 session_start();
+$try_pass = "";
+
+function validate($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+// PLACEHOLDER. NEED TO ADD HASHING FUNCTION FOR LATER
 $password = 'infants2022';
-if (isset($_POST['password']) && ($_POST['password'] == $password)) {
-    echo "<h2 style='color:green;'>Success!</h2>";
-}else {
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        echo "<h2 style='color:red;'>Failure</h2>";
+
+if (isset($_POST['password'])) {
+    $try_pass = validate($_POST['password']);
+    if ($try_pass == $password) {
+        $_SESSION['authenticated'] = true;
+        echo "<h2 style='color:green;'>Success!</h2>";
+        include 'inftod.php';
+    }else {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            echo "<h2 style='color:red;'>Failure</h2>";
+        }
     }
 }
 ?>
-
     <body>
         <form title='login' method='POST' action='' autocomplete='off'>
             <div style='display:inline-block;'>

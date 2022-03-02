@@ -105,15 +105,14 @@
 
 
             </div>
-            <p>This is some text</p>
         </main>
         <footer>
         <div class="btn-group mx-auto" role="group" aria-label="social media links">
-            <a class="btn bg-light" role="button"
+            <a class="btn" role="button"
             href="https://www.facebook.com/BusyBeeChildCareMA" aria-label="facebook">
                 <i class="bi-facebook" style="font-size:36px; color:black;"></i>
             </a>
-            <a class="btn bg-light" role="button"
+            <a class="btn" role="button"
             href="https://www.instagram.com/busybeechildcare/" aria-label="instagram">
                 <i class="bi-instagram" style="font-size:36px; color:black;"></i>
             </a>
