@@ -34,7 +34,7 @@ if (isset($_POST['password'])) {
     if ($try_pass == $password) {
         $_SESSION['authenticated'] = true;
         echo "<h2 style='color:green;'>Success!</h2>";
-        include 'inftod.php';
+        header('Location: /src/inftod.html');
     }else {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "<h2 style='color:red;'>Failure</h2>";

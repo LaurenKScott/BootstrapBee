@@ -22,7 +22,7 @@
     <body class="container-fluid" style="">
 
         <!-- PHP INFORMATION AND CONTENT -->
-        <?php include("formhandler.php");?>
+        <?php include("handler.php");?>
         <a class="sr-only sr-only-focusable visually-hidden" aria-label="skip navigation" href="#main">
             Skip to main content</a>
          <!-- HEADER: LOGO, NAV -->
