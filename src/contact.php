@@ -16,6 +16,26 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <style>
+        form {
+            opacity: 0.9;
+        }
+        #socials {
+            display:inline-block;
+            list-style-type: none;
+        }
+        #socials > a > i {
+            font-size: 36px;
+            color:black;
+        }
+        #logo {
+            max-width: 100%;
+            height: auto;
+        }
+        #collapsible-navbar {
+            color:black;
+        }
+        </style>
     </head>
 
     <!-- BODY: THE START OF THE PAGE CONTENT -->
@@ -77,23 +97,22 @@
                 </div>
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="name" name="name"
-                    placeholder="First Last" required aria-required="true">
+                    placeholder="" required aria-required="true">
                     <label for="name" class="form-label">Name</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="tel" class="form-control" id="phone" name="phone"
-                    placeholder="555-555-5555" required aria-required="true">
+                    placeholder="" required aria-required="true">
                     <label for="phone" class="form-label">Phone</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="email" name="email"
-                    placeholder="yourname@example.com" required aria-required="true">
+                    placeholder="" required aria-required="true">
                     <label for="email" class="form-label">Email Address</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" name="message" style="height:8rem;" 
-                    required aria-required="true">
-                    </textarea>
+                    <textarea class="form-control" id="message" name="message" 
+                    placeholder="" style="height:8rem;" required aria-required="true"></textarea>
                     <label for="message" class="form-label">Message</label>
                 </div>
                 <div class="d-grid gap-2 mx-auto" id="submit-button" 
