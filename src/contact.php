@@ -106,26 +106,27 @@
 
             </div>
         </main>
-        <footer class="d-flex">
-            <div class="btn-group d-flex justify-content-center" role="group" aria-label="social media links">
-                <a class="btn" role="button"
-                href="https://www.facebook.com/BusyBeeChildCareMA" aria-label="facebook">
-                    <i class="bi-facebook" style="font-size:36px; color:black;"></i>
-                </a>
-                <a class="btn" role="button"
-                href="https://www.instagram.com/busybeechildcare/" aria-label="instagram">
-                    <i class="bi-instagram" style="font-size:36px; color:black;"></i>
-                </a>
-                <a class="btn" role="button"
-                    href="https://www.youtube.com/channel/UCul5ckAkAQzN1M9RKyiaPMA" aria-label="youtube">
-                        <i class="bi-youtube" style="font-size:36px; color:black;"></i>
-                </a>
-                <a class="btn" role="button"
-                    href="https://twitter.com/busybee_pre" aria-label="twitter">
-                        <i class="bi-twitter" style="font-size:36px; color:black;"></i>
-                </a>
-                
-            </div>
+        <footer class="d-flex justify-content-center">
+        <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
+            <a class="btn" role="button"
+            href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
+                <i class="bi-facebook"></i>
+            </a>
+            <a class="btn" role="button"
+            href="https://www.instagram.com/busybeechildcare/" target="_blank" aria-label="instagram">
+                <i class="bi-instagram"></i>
+            </a>
+            <a class="btn" role="button"
+                href="https://www.youtube.com/channel/UCul5ckAkAQzN1M9RKyiaPMA" target="_blank" aria-label="youtube">
+                    <i class="bi-youtube"></i>
+            </a>
+            <a class="btn" role="button"
+                href="https://twitter.com/busybee_pre" target="_blank" aria-label="twitter">
+                    <i class="bi-twitter"></i>
+            </a>
+            
+        </div>
     </footer>
+
     </body>
 </html>
