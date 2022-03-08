@@ -1,15 +1,15 @@
 <!DOCTYPE html>
- <html lang="en">
-
- <!-- HEAD: META TAGS, LINKS, PAGE TITLE AND ICON -->
- <head> 
+<html lang='en'>
+<head>
     <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="https://github.com/LaurenKScott, Busy Bee Preschool">
-	<meta name="description" content="Providing the best in child care and education since 1989">
-	<meta name="robots" content="index, follow">
-	<title>Gallery- Busy Bee Child Care & Preschool</title>
-	<link rel="icon" href="/assets/beeicontransparent.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="https://github.com/LaurenKScott, Busy Bee Preschool">
+    <meta name="description" content="Contact information page for Busy Bee Child Care and Preschool.
+    Busy Bee is an independently owned and operated child care center, providing the best quality
+    education on the South Shore since 1989">
+    <meta name="robots" content="index, follow">
+    <title>Portal - Busy Bee Child Care & Preschool</title>
+    <link rel="icon" href="/assets/beeicontransparent.png">
     <!-- BOOTSTRAP STYLESHEET AND SCRIPT LINKS (CDN)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -31,9 +31,33 @@
             color:black;
         }
     </style>
- </head>
+</head>
+<?php 
+session_start();
+$try_pass = "";
 
-<!-- BODY: THE START OF THE PAGE CONTENT -->
+function validate($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
+// PLACEHOLDER. NEED TO ADD HASHING FUNCTION FOR LATER
+$password = 'infants2022';
+
+if (isset($_POST['password'])) {
+    $try_pass = validate($_POST['password']);
+    if ($try_pass == $password) {
+        $_SESSION['authenticated'] = true;
+        header('Location: /src/inftod.html');
+    }else {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            echo "<h2 style='color:red;'>Failure</h2>";
+        }
+    }
+}
+?>
 <body>
 
     <!-- HEADER: LOGO, NAV -->
@@ -76,30 +100,32 @@
         </nav>
     <!-- END HEADER -->
     </header>
-    <main class="container">
-
-    </main>
-    <footer class="d-flex justify-content-center">
-        <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
-            <a class="btn" role="button"
-            href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
-                <i class="bi-facebook"></i>
-            </a>
-            <a class="btn" role="button"
-            href="https://www.instagram.com/busybeechildcare/" target="_blank" aria-label="instagram">
-                <i class="bi-instagram"></i>
-            </a>
-            <a class="btn" role="button"
-                href="https://www.youtube.com/channel/UCul5ckAkAQzN1M9RKyiaPMA" target="_blank" aria-label="youtube">
-                    <i class="bi-youtube"></i>
-            </a>
-            <a class="btn" role="button"
-                href="https://twitter.com/busybee_pre" target="_blank" aria-label="twitter">
-                    <i class="bi-twitter"></i>
-            </a>
-            
+    <form title='login' method='POST' action='' autocomplete='off'>
+        <div style='display:inline-block;'>
+            <label for='password'>Password</label>
+            <input type='text' name='password' id='password' required aria-required='true'> 
         </div>
+        <button class='btn btn-light border-2 border-dark' type="submit" name='submit'>Submit</button>
+    </form>
+    <footer class="d-flex justify-content-center">
+    <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
+        <a class="btn" role="button"
+        href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
+            <i class="bi-facebook"></i>
+        </a>
+        <a class="btn" role="button"
+        href="https://www.instagram.com/busybeechildcare/" target="_blank" aria-label="instagram">
+            <i class="bi-instagram"></i>
+        </a>
+        <a class="btn" role="button"
+            href="https://www.youtube.com/channel/UCul5ckAkAQzN1M9RKyiaPMA" target="_blank" aria-label="youtube">
+                <i class="bi-youtube"></i>
+        </a>
+        <a class="btn" role="button"
+            href="https://twitter.com/busybee_pre" target="_blank" aria-label="twitter">
+                <i class="bi-twitter"></i>
+        </a>       
+    </ul>
     </footer>
-
-</body>
+    </body>
 </html>

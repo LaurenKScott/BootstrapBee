@@ -28,41 +28,41 @@
          <!-- HEADER: LOGO, NAV -->
         <header class="container-fluid position-sticky" style="">
             <!-- NAVIGATION BAR WITH STICKY POSITION-->
-            <nav role="navigation" class="navbar navbar-expand-sm navbar-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="/assets/busybeelogo.png" alt="Busy Bee Logo" 
-                        style="max-width:100%; height:auto;">
-                    </a>
-                    <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#collapsible-navbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end align-bottom"  
-                    id="collapsible-navbar">
-                        <ul class="navbar-nav" role="navigation">
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="programs.html">Programs</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="gallery.html">Gallery</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="parents.html">Parents</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="faq.html">FAQ</a>
-                            </li>
-                            <li class="nav-item px-1">
-                                <a class="nav-link" href="contact.php">Contact</a>
-                            </li>
-                        </ul>
-                </div>
-                </div>
-            </nav>
+            <nav role="navigation" class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/assets/busybeelogo.png" alt="Busy Bee Logo" 
+                    style="max-width:100%; height:auto;">
+                </a>
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#collapsible-navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" 
+                id="collapsible-navbar">
+                    <ul class="navbar-nav" role="navigation">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="programs.html">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="parents.php">Parent Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.php">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+            </div>
+        </nav>
         <!-- END HEADER -->
         </header>
 
