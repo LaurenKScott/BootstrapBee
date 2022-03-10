@@ -106,7 +106,7 @@ if (isset($_POST['password'])) {
     </header>
     <main class="container-fluid">
         <div class="mx-auto mt-3 d-flex justify-content-center">
-        <iframe src="/assets/Busy_Bee_Resources.pdf#view=Fit" width="90%" height="600px" frameborder="0"></iframe>
+        <iframe src="/assets/Busy_Bee_Resources.pdf#view=FitH" width="70%" height="600px" frameborder="0"></iframe>
         </div>
     <form title='login' method='POST' action='' autocomplete='off'>
         <div style='display:inline-block;'>
