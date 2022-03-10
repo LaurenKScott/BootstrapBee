@@ -44,16 +44,20 @@ function validate($data){
 }
 
 // PLACEHOLDER. NEED TO ADD HASHING FUNCTION FOR LATER
-$password = 'infants2022';
-
+$infpassword = 'infants2022';
+$prepassword = 'preschool2022';
 if (isset($_POST['password'])) {
     $try_pass = validate($_POST['password']);
-    if ($try_pass == $password) {
+    if ($try_pass == $infpassword) {
         $_SESSION['authenticated'] = true;
         header('Location: /src/inftod.html');
+    elseif ($try_pass == $prepassword) {
+        $_SESSION['authenticated'] = true;
+
+    }
     }else {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            echo "<h2 style='color:red;'>Failure</h2>";
+            echo "<h3 style='color:red;'>Incorrect password</h3>";
         }
     }
 }
