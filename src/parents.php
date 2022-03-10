@@ -61,8 +61,9 @@ if (isset($_POST['password'])) {
     }
 }
 ?>
-<body>
-
+<body>  
+    <a class="sr-only sr-only-focusable visually-hidden" aria-label="skip navigation" href="#main">
+            Skip to main content</a>
     <!-- HEADER: LOGO, NAV -->
     <header class="container-fluid">
         <!-- NAVIGATION BAR WITH STICKY POSITION-->
@@ -103,7 +104,10 @@ if (isset($_POST['password'])) {
         </nav>
     <!-- END HEADER -->
     </header>
-    <main>
+    <main class="container-fluid">
+        <div class="mx-auto mt-3 d-flex justify-content-center">
+        <iframe src="/assets/Busy_Bee_Resources.pdf#view=Fit" width="90%" height="600px" frameborder="0"></iframe>
+        </div>
     <form title='login' method='POST' action='' autocomplete='off'>
         <div style='display:inline-block;'>
             <label for='password'>Password</label>
@@ -113,7 +117,11 @@ if (isset($_POST['password'])) {
     </form>
     </main>
     <footer class="d-flex justify-content-center">
+    <h6>Locations</h6>
+    <h6>Hours</h6>
+    <h6>Contact Info</h6>
     <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
+        <h6>Connect</h6>
         <a class="btn" role="button"
         href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
             <i class="bi-facebook"></i>
@@ -131,7 +139,7 @@ if (isset($_POST['password'])) {
                 <i class="bi-twitter"></i>
         </a>       
     </ul>
-
+    <p class="text-muted">Copyright </p>
     </footer>
     </body>
 </html>
