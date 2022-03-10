@@ -33,7 +33,6 @@
     </style>
 </head>
 <?php 
-session_start();
 $try_pass = "";
 
 function validate($data){
@@ -49,13 +48,13 @@ $prepassword = 'preschool2022';
 if (isset($_POST['password'])) {
     $try_pass = validate($_POST['password']);
     if ($try_pass == $infpassword) {
-        $_SESSION['authenticated'] = true;
+       
         header('Location: /src/inftod.html');
-    elseif ($try_pass == $prepassword) {
-        $_SESSION['authenticated'] = true;
-
     }
-    }else {
+    elseif ($try_pass == $prepassword) {
+        echo "<h3>True</h3>";
+    }
+    else {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "<h3 style='color:red;'>Incorrect password</h3>";
         }
