@@ -103,6 +103,7 @@ if (isset($_POST['password'])) {
         </nav>
     <!-- END HEADER -->
     </header>
+    <main>
     <form title='login' method='POST' action='' autocomplete='off'>
         <div style='display:inline-block;'>
             <label for='password'>Password</label>
@@ -110,6 +111,7 @@ if (isset($_POST['password'])) {
         </div>
         <button class='btn btn-light border-2 border-dark' type="submit" name='submit'>Submit</button>
     </form>
+    </main>
     <footer class="d-flex justify-content-center">
     <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
         <a class="btn" role="button"
@@ -129,6 +131,7 @@ if (isset($_POST['password'])) {
                 <i class="bi-twitter"></i>
         </a>       
     </ul>
+
     </footer>
     </body>
 </html>
