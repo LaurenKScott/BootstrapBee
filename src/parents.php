@@ -113,7 +113,7 @@ if (isset($_POST['password'])) {
         </form>
         <div class="mx-auto mt-3 d-flex justify-content-center">
         <iframe src="/assets/Busy_Bee_Resources.pdf" 
-        width="70%" height="600px" style="frameBorder:0; border:0;"></iframe>
+        width="90%" height="800px" style="frameBorder:0; border:0;"></iframe>
         </div>
     </main>
     <footer class="d-flex justify-content-around">
