@@ -118,13 +118,13 @@ if (isset($_POST['password'])) {
     </main>
     <footer class="d-flex justify-content-center">
         <div class="row">
-            <h6>Locations</h6>
+            <h6 class="col">Locations</h6>
 
-            <h6>Hours</h6>
+            <h6 class="col">Hours</h6>
 
-            <h6>Contact Info</h6>
+            <h6 class="col">Contact Info</h6>
 
-            <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
+            <ul class="btn-group mx-auto col" id="socials" role="group" aria-label="social media links">
                 <h6>Connect</h6>
                 <a class="btn" role="button"
                 href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
@@ -145,6 +145,6 @@ if (isset($_POST['password'])) {
             </ul>
         </div>
     </footer>
-    <p class="text-muted">Copyright Busy Bee Preschool 2022</p>
+    <p class="text-muted text-center">Copyright Busy Bee Preschool 2022</p>
     </body>
 </html>
