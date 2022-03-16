@@ -117,29 +117,34 @@ if (isset($_POST['password'])) {
     </form>
     </main>
     <footer class="d-flex justify-content-center">
-    <h6>Locations</h6>
-    <h6>Hours</h6>
-    <h6>Contact Info</h6>
-    <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
-        <h6>Connect</h6>
-        <a class="btn" role="button"
-        href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
-            <i class="bi-facebook"></i>
-        </a>
-        <a class="btn" role="button"
-        href="https://www.instagram.com/busybeechildcare/" target="_blank" aria-label="instagram">
-            <i class="bi-instagram"></i>
-        </a>
-        <a class="btn" role="button"
-            href="https://www.youtube.com/channel/UCul5ckAkAQzN1M9RKyiaPMA" target="_blank" aria-label="youtube">
-                <i class="bi-youtube"></i>
-        </a>
-        <a class="btn" role="button"
-            href="https://twitter.com/busybee_pre" target="_blank" aria-label="twitter">
-                <i class="bi-twitter"></i>
-        </a>       
-    </ul>
-    <p class="text-muted">Copyright </p>
+        <div class="row">
+            <h6>Locations</h6>
+
+            <h6>Hours</h6>
+
+            <h6>Contact Info</h6>
+
+            <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
+                <h6>Connect</h6>
+                <a class="btn" role="button"
+                href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
+                    <i class="bi-facebook"></i>
+                </a>
+                <a class="btn" role="button"
+                href="https://www.instagram.com/busybeechildcare/" target="_blank" aria-label="instagram">
+                    <i class="bi-instagram"></i>
+                </a>
+                <a class="btn" role="button"
+                    href="https://www.youtube.com/channel/UCul5ckAkAQzN1M9RKyiaPMA" target="_blank" aria-label="youtube">
+                        <i class="bi-youtube"></i>
+                </a>
+                <a class="btn" role="button"
+                    href="https://twitter.com/busybee_pre" target="_blank" aria-label="twitter">
+                        <i class="bi-twitter"></i>
+                </a>       
+            </ul>
+        </div>
     </footer>
+    <p class="text-muted">Copyright Busy Bee Preschool 2022</p>
     </body>
 </html>
