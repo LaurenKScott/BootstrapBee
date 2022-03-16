@@ -116,7 +116,7 @@ if (isset($_POST['password'])) {
         width="70%" height="600px" style="frameBorder:0; border:0;"></iframe>
         </div>
     </main>
-    <footer class="d-flex">
+    <footer class="d-flex justify-content-around">
         <div class="row">
             <h6 class="col">Locations</h6>
 
@@ -124,26 +124,25 @@ if (isset($_POST['password'])) {
 
             <h6 class="col">Contact Info</h6>
 
-            <div class="col">
-                <h6>Connect</h6>
-                <ul class="btn-group mx-auto align-right" id="socials" role="group" aria-label="social media links">
-                <a class="btn" role="button"
-                href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
-                    <i class="bi-facebook"></i>
-                </a>
-                <a class="btn" role="button"
-                href="https://www.instagram.com/busybeechildcare/" target="_blank" aria-label="instagram">
-                    <i class="bi-instagram"></i>
-                </a>
-                <a class="btn" role="button"
-                    href="https://www.youtube.com/channel/UCul5ckAkAQzN1M9RKyiaPMA" target="_blank" aria-label="youtube">
-                        <i class="bi-youtube"></i>
-                </a>
-                <a class="btn" role="button"
-                    href="https://twitter.com/busybee_pre" target="_blank" aria-label="twitter">
-                        <i class="bi-twitter"></i>
-                </a>       
-                </ul>
+            <h6 class="col">Connect</h6>
+            <ul class="btn-group mx-auto align-right" id="socials" role="group" aria-label="social media links">
+            <a class="btn" role="button"
+            href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
+                <i class="bi-facebook"></i>
+            </a>
+            <a class="btn" role="button"
+            href="https://www.instagram.com/busybeechildcare/" target="_blank" aria-label="instagram">
+                <i class="bi-instagram"></i>
+            </a>
+            <a class="btn" role="button"
+                href="https://www.youtube.com/channel/UCul5ckAkAQzN1M9RKyiaPMA" target="_blank" aria-label="youtube">
+                    <i class="bi-youtube"></i>
+            </a>
+            <a class="btn" role="button"
+                href="https://twitter.com/busybee_pre" target="_blank" aria-label="twitter">
+                    <i class="bi-twitter"></i>
+            </a>       
+            </ul>
             </div>
         </div>
     </footer>
