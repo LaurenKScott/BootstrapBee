@@ -104,19 +104,19 @@ if (isset($_POST['password'])) {
     <!-- END HEADER -->
     </header>
     <main class="container-fluid">
+        <form title='login' method='POST' action='' autocomplete='off'>
+            <div style='display:inline-block;'>
+                <label for='password'>Password</label>
+                <input type='text' name='password' id='password' required aria-required='true'> 
+            </div>
+            <button class='btn btn-light border-2 border-dark' type="submit" name='submit'>Submit</button>
+        </form>
         <div class="mx-auto mt-3 d-flex justify-content-center">
         <iframe src="/assets/Busy_Bee_Resources.pdf" 
         width="70%" height="600px" style="frameBorder:0; border:0;"></iframe>
         </div>
-    <form title='login' method='POST' action='' autocomplete='off'>
-        <div style='display:inline-block;'>
-            <label for='password'>Password</label>
-            <input type='text' name='password' id='password' required aria-required='true'> 
-        </div>
-        <button class='btn btn-light border-2 border-dark' type="submit" name='submit'>Submit</button>
-    </form>
     </main>
-    <footer class="d-flex justify-content-center">
+    <footer class="d-flex justify-content-around">
         <div class="row">
             <h6 class="col">Locations</h6>
 
@@ -124,9 +124,9 @@ if (isset($_POST['password'])) {
 
             <h6 class="col">Contact Info</h6>
 
-    
-            <h6 class="col">Connect</h6>
-            <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
+            <div class="col">
+                <h6>Connect</h6>
+                <ul class="btn-group mx-auto align-right" id="socials" role="group" aria-label="social media links">
                 <a class="btn" role="button"
                 href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
                     <i class="bi-facebook"></i>
@@ -143,7 +143,8 @@ if (isset($_POST['password'])) {
                     href="https://twitter.com/busybee_pre" target="_blank" aria-label="twitter">
                         <i class="bi-twitter"></i>
                 </a>       
-            </ul>
+                </ul>
+            </div>
         </div>
     </footer>
     <p class="text-muted text-center">Copyright Busy Bee Preschool 2022</p>
