@@ -48,11 +48,10 @@ $prepassword = 'preschool2022';
 if (isset($_POST['password'])) {
     $try_pass = validate($_POST['password']);
     if ($try_pass == $infpassword) {
-       
         header('Location: /src/inftod.html');
     }
     elseif ($try_pass == $prepassword) {
-        echo "<h3>True</h3>";
+        header('Location: /src/prek.html');
     }
     else {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
