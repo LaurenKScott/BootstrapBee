@@ -116,7 +116,7 @@ if (isset($_POST['password'])) {
         width="70%" height="600px" style="frameBorder:0; border:0;"></iframe>
         </div>
     </main>
-    <footer class="d-flex justify-content-around">
+    <footer class="d-flex">
         <div class="row">
             <h6 class="col">Locations</h6>
 
