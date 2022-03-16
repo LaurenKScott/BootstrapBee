@@ -124,8 +124,9 @@ if (isset($_POST['password'])) {
 
             <h6 class="col">Contact Info</h6>
 
-            <ul class="btn-group mx-auto col" id="socials" role="group" aria-label="social media links">
-                <h6>Connect</h6>
+    
+            <h6 class="col">Connect</h6>
+            <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
                 <a class="btn" role="button"
                 href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
                     <i class="bi-facebook"></i>
