@@ -119,9 +119,10 @@ if (isset($_POST['password'])) {
     <footer class="d-flex justify-content-around">
         <div class="row">
             <h6 class="col">Locations</h6>
-
+            Whitman
+            East Bridgewater
             <h6 class="col">Hours</h6>
-
+            Mon-Fri 
             <h6 class="col">Contact Info</h6>
 
             <h6 class="col">Connect</h6>
