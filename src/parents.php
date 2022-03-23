@@ -105,7 +105,8 @@ if (isset($_POST['password'])) {
     </header>
     <main class="container-fluid">
         <!--  LOGIN FORM FOR PARENTS -->
-        <div>Class Portal Login</div>
+        <h1>Parent Resources</h1>
+        <div><h2>Class Portal Login</h2></div>
         <form title='login' method='POST' action='' autocomplete='off'>
             <div style='display:inline-block;'>
                 <label for='password'>Password</label>
@@ -116,10 +117,10 @@ if (isset($_POST['password'])) {
         <!-- END PORTAL LOGIN -->
         <div class="row">
             <div class="col" style="background-color:#1aecff;">
-                <h2>Forms</h2>
+                <h3>Forms</h3>
             </div>
-            <div class="col">
-                <h2>Resources</h2>
+            <div class="col" style="background-color:#ffcc33;">
+                <h3>Resources</h3>
             </div>
         </div>
        
