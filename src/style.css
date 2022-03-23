@@ -1,0 +1,41 @@
+body {
+    background-color: rgba(255, 95, 0, 0.75);
+    font-family: Helvetica, sans-serif;
+    color:black;
+}
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+h1 {
+    color: black;
+    font-weight: 500;
+}
+#socials {
+    display:inline-block;
+    list-style-type: none;
+}
+#socials > a > i {
+    font-size: 36px;
+}
+#fb {
+    color: rgb(0, 95, 190);
+}
+#ig {
+    color: rgb(180, 55, 195);
+}
+#yt {
+    color: rgb(200, 0, 0);
+}
+#tw {
+    color: rgb(100, 175, 255);
+}
+#logo {
+    max-width: 100%;
+    height: auto;
+}
+#collapsible-navbar {
+    color:black;
+}
+footer {
+    background-color: rgba(255, 255, 255);
+}
