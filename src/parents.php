@@ -104,6 +104,7 @@ if (isset($_POST['password'])) {
     <!-- END HEADER -->
     </header>
     <main class="container-fluid">
+        <!--  LOGIN FORM FOR PARENTS -->
         <form title='login' method='POST' action='' autocomplete='off'>
             <div style='display:inline-block;'>
                 <label for='password'>Password</label>
@@ -111,10 +112,9 @@ if (isset($_POST['password'])) {
             </div>
             <button class='btn btn-light border-2 border-dark' type="submit" name='submit'>Submit</button>
         </form>
-        <div class="mx-auto mt-3 d-flex justify-content-center">
-        <iframe src="/assets/Busy_Bee_Resources.pdf" 
-        width="90%" height="800px" style="frameBorder:0; border:0;"></iframe>
-        </div>
+        <!-- END PORTAL LOGIN -->
+        <div class="col">Forms</div>
+        <div class="col">Resources</div>
     </main>
     <footer class="d-flex justify-content-around">
         <div class="row">
