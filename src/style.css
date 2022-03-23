@@ -2,6 +2,16 @@ body {
     font-family: Helvetica, sans-serif;
     color:black;
 }
+#covid {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+#inner-alert {
+    margin: 0 auto;
+}
+
 header {
     background-color: rgba(255, 255, 255, 0.9);
 }
