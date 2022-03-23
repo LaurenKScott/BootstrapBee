@@ -8,7 +8,7 @@
     Busy Bee is an independently owned and operated child care center, providing the best quality
     education on the South Shore since 1989">
     <meta name="robots" content="index, follow">
-    <title>Portal - Busy Bee Child Care & Preschool</title>
+    <title>Parents - Busy Bee Child Care & Preschool</title>
     <link rel="icon" href="/assets/beeicontransparent.png">
     <!-- BOOTSTRAP STYLESHEET AND SCRIPT LINKS (CDN)-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
@@ -105,6 +105,7 @@ if (isset($_POST['password'])) {
     </header>
     <main class="container-fluid">
         <!--  LOGIN FORM FOR PARENTS -->
+        <div>Class Portal Login</div>
         <form title='login' method='POST' action='' autocomplete='off'>
             <div style='display:inline-block;'>
                 <label for='password'>Password</label>
@@ -113,8 +114,15 @@ if (isset($_POST['password'])) {
             <button class='btn btn-light border-2 border-dark' type="submit" name='submit'>Submit</button>
         </form>
         <!-- END PORTAL LOGIN -->
-        <div class="col">Forms</div>
-        <div class="col">Resources</div>
+        <div class="row">
+            <div class="col" style="background-color:#1aecff;">
+                <h2>Forms</h2>
+            </div>
+            <div class="col">
+                <h2>Resources</h2>
+            </div>
+        </div>
+       
     </main>
     <footer class="d-flex justify-content-around">
         <div class="row">
