@@ -55,7 +55,7 @@ if (isset($_POST['password'])) {
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="/assets/busybeelogo.png" alt="Busy Bee Logo" 
-                    style="max-width:100%; height:auto;">
+                    id="header-logo">
                 </a>
                 <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" 
                 data-bs-target="#collapsible-navbar">
@@ -90,15 +90,22 @@ if (isset($_POST['password'])) {
     </header>
     <main class="container-fluid">
         <!--  LOGIN FORM FOR PARENTS -->
-        <h1>Parent Resources</h1>
-        <div><h2>Class Portal Login</h2></div>
-        <form title='login' method='POST' action='' autocomplete='off'>
+        <div class="rounded p-2" id="page-title">
+            <h1 class="text-center">Parent Resources</h1>
+        </div>
+        <div id="portal">
+            <h2>Class Portal Login</h2>
+            <p id="portal-instr">Type your class password here to access our monthly newsletter</p> 
+            <form title='login' method='POST' action='' autocomplete='off'>
             <div style='display:inline-block;'>
                 <label for='password'>Password</label>
                 <input type='text' name='password' id='password' required aria-required='true'> 
             </div>
-            <button class='btn btn-light border-2 border-dark' type="submit" name='submit'>Submit</button>
-        </form>
+            <button class='btn btn-light border-dark' type="submit" name='submit'>Submit</button>
+            </form>
+        </div>
+
+        
         <!-- END PORTAL LOGIN -->
         <div class="row">
             <div class="col" style="background-color:#1aecff;">
