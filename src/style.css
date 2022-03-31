@@ -38,22 +38,22 @@ header {
     overflow: hidden;
     width: 100%;
     color: rgb(115, 46, 234);
-    animation: wordCycle 35s linear infinite 0s;
+    animation: wordCycle 24s linear infinite 0s;
 }
 #rolo-words span:nth-child(2){
-    animation-delay: 5s;
+    animation-delay: 4s;
 }
 #rolo-words span:nth-child(3){
-    animation-delay: 10s;
+    animation-delay: 8s;
 }
 #rolo-words span:nth-child(4){
-    animation-delay: 15s;
+    animation-delay: 12s;
 }
 #rolo-words span:nth-child(5){
-    animation-delay: 20s;
+    animation-delay: 16s;
 }
 #rolo-words span:nth-child(6){
-    animation-delay: 25s;
+    animation-delay: 20s;
 }
 #socials {
     display:inline-block;
@@ -85,25 +85,9 @@ footer {
     background-color: rgb(255, 249, 127);
 }
 @keyframes wordCycle {
-    0% {
-        opacity: 1;
-        animation-timing-function: ease-in; 
-        height: 0;
-    }
-    20% {
-        opacity: 1;
-        height: 60px;
-    }
-    40% {
-        opacity: 1;
-        height: 60px;
-    }
-    60% {
-        opacity: 1;
-        height: 60px;
-    }
-    80% {
-        opacity: 1;
-        height: 60px;
-    }
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+	25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
 }
