@@ -17,11 +17,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <style>
-        form {
-            opacity: 0.9;
-        }
-        </style>
     </head>
 
     <!-- BODY: THE START OF THE PAGE CONTENT -->
