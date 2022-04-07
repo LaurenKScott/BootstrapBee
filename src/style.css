@@ -17,6 +17,9 @@ header {
     max-width:100%; 
     height:auto;
 }
+#collapsible-navbar > ul {
+   text-align: center;
+}
 #page-title {
     color: black;
     font-weight: 500;
