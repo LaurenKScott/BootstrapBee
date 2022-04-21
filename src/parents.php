@@ -112,23 +112,25 @@ if (isset($_POST['password'])) {
         
         <!-- END PORTAL LOGIN -->
         <div class="row">
-            <div class="col">
-                <h3>Forms</h3>
+            <div class="col d-flex justify-content-center">
                 <ul class="list-unstyled">
-                    <li><a href="#">Physical</a></li>
-                    <li><a href="#">Sunscreen</a></li>
-                    <li><a href="#">Tylenol</a></li>
+                    <h3>Forms</h3>
+                    <li><a class="form-links" href="/assets/PhysicalForm.pdf" target="_blank">Physical</a></li>
+                    <li><a class="form-links" href="/assets/MedicationConsent.pdf" target="_blank">Medication Consent</a></li>
+                    <li><a class="form-links" href="" target="_blank">Sunscreen</a></li>
+                    <li><a class="form-links" href="/assets/TylenolForm.pdf" target="_blank">Tylenol</a></li>
                 <ul>
             </div>
-            <div class="col">
-                <h3>Resources</h3>
+            <div class="col"></div>
+            <div class="col d-flex justify-left">
                 <ul class="list-unstyled">
-                    <li><a href="#">Good Manners</a></li>
-                    <li><a href="#">Play</a></li>
-                    <li><a href="#">Language</a></li>
-                    <li><a href="#">Self Control</a></li>
-                    <li><a href="#">Establishing Routines</a></li>
-                    <li><a href="#">Children & Anxiety</a></li>
+                    <h3>Resources</h3>
+                    <li><a class="form-links" href="#">Good Manners</a></li>
+                    <li><a class="form-links" href="#">Play</a></li>
+                    <li><a class="form-links" href="#">Language</a></li>
+                    <li><a class="form-links" href="#">Self Control</a></li>
+                    <li><a class="form-links" href="#">Establishing Routines</a></li>
+                    <li><a class="form-links" href="#">Children & Anxiety</a></li>
             </div>
         </div>
        

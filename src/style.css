@@ -1,7 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
     color:black;
-    /*background-color: rgb(245, 245, 99);*/
+    background-color: rgb(245, 245, 99);
 }
 #covid {
     width: 100%;
@@ -31,6 +31,7 @@ header {
 .gal-imgs {
     max-width: 100%;
     height: auto;
+    margin: 4px;
 }
 #portal {
     padding: 1em;
@@ -39,6 +40,9 @@ header {
 }
 #portal-instr {
     font-style: italic;
+}
+.form-links {
+    text-decoration: none;
 }
 .rolodex {
     display: inline-flex;
