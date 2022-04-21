@@ -28,6 +28,10 @@ header {
     max-height: min-content;
     object-fit: contain;
 }
+.gal-imgs {
+    max-width: 100%;
+    height: auto;
+}
 #portal {
     padding: 1em;
     text-align: center;

@@ -40,7 +40,7 @@ if (isset($_POST['password'])) {
     }
     else {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-            echo "<h3 style='color:red;'>Incorrect password</h3>";
+            $errormsg = "Incorrect password";
         }
     }
 }
@@ -112,8 +112,13 @@ if (isset($_POST['password'])) {
         
         <!-- END PORTAL LOGIN -->
         <div class="row">
-            <div class="col" style="background-color:#1aecff;">
+            <div class="col">
                 <h3>Forms</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#">Physical</a></li>
+                    <li><a href="#">Sunscreen</a></li>
+                    <li><a href="#">Tylenol</a></li>
+                <ul>
             </div>
             <div class="col" style="background-color:#ffcc33;">
                 <h3>Resources</h3>
