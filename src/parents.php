@@ -90,19 +90,23 @@ if (isset($_POST['password'])) {
     </header>
     <main class="container-fluid">
         <!--  LOGIN FORM FOR PARENTS -->
-        <div class="rounded p-2" id="page-title">
-            <h1 class="text-center">Parent Resources</h1>
-        </div>
-        <div id="portal">
-            <h2>Class Portal Login</h2>
-            <p id="portal-instr">Type your class password here to access our monthly newsletter</p> 
-            <form title='login' method='POST' action='' autocomplete='off'>
-            <div style='display:inline-block;'>
-                <label for='password'>Password</label>
-                <input type='text' name='password' id='password' required aria-required='true'> 
+        <div class="row">
+            <div class="col rounded p-2" id="page-title">
+                <h1 class="text-center">Parent Resources</h1>
             </div>
-            <button class='btn btn-light border-dark' type="submit" name='submit'>Submit</button>
-            </form>
+        </div>
+        <div class="row">
+            <div class ="col" id="portal">
+                <h2>Class Portal Login</h2>
+                <p id="portal-instr">Type your class password here to access our monthly newsletter</p> 
+                <form title='login' method='POST' action='' autocomplete='off'>
+                <div style='display:inline-block;'>
+                    <label for='password'>Password</label>
+                    <input type='text' name='password' id='password' required aria-required='true'> 
+                </div>
+                <button class='btn btn-light border-dark' type="submit" name='submit'>Submit</button>
+                </form>
+            </div>
         </div>
 
         

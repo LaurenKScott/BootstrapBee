@@ -5,8 +5,6 @@
         $phone = $_POST['phone'];
         $phone = validate($phone);
         $message = clean($_POST['message']);
-        if (is_null($phone)){
-            echo 'Invalid phone number.';
         if (is_null($message)) {
             echo 'Please enter a message';
         }

@@ -1,7 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
     color:black;
-    background-color: rgb(245, 245, 99);
+    /*background-color: rgb(245, 245, 99);*/
 }
 #covid {
     width: 100%;
@@ -27,6 +27,9 @@ header {
     max-width: 100%;
     max-height: min-content;
     object-fit: contain;
+}
+#portal {
+    background-color: aquamarine;
 }
 .rolodex {
     display: inline-flex;
