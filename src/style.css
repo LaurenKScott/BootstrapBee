@@ -1,6 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
     color:black;
+    background-color: rgb(245, 245, 99);
 }
 #covid {
     width: 100%;
