@@ -69,7 +69,7 @@
 
         <!-- BREADCRUMB NAVIGATION FOR ARIA USERS-->
         <main>
-            <div class="text-center"><h1>Don't Bee a Stranger!</h1></div>
+            <div class="text-center p-2 mb-2"><h1>Don't Bee a Stranger!</h1></div>
             <div class="row">
                 <div class="col-sm-7">
                     <embed src="/assets/Busy_Bee_Contact.pdf" height="100%"

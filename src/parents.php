@@ -120,8 +120,15 @@ if (isset($_POST['password'])) {
                     <li><a href="#">Tylenol</a></li>
                 <ul>
             </div>
-            <div class="col" style="background-color:#ffcc33;">
+            <div class="col">
                 <h3>Resources</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#">Good Manners</a></li>
+                    <li><a href="#">Play</a></li>
+                    <li><a href="#">Language</a></li>
+                    <li><a href="#">Self Control</a></li>
+                    <li><a href="#">Establishing Routines</a></li>
+                    <li><a href="#">Children & Anxiety</a></li>
             </div>
         </div>
        
