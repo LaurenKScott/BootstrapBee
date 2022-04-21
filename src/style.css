@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.95);
 }
 #header-logo {
     max-width:100%; 
@@ -29,7 +29,12 @@ header {
     object-fit: contain;
 }
 #portal {
+    padding: 1em;
+    text-align: center;
     background-color: aquamarine;
+}
+#portal-instr {
+    font-style: italic;
 }
 .rolodex {
     display: inline-flex;

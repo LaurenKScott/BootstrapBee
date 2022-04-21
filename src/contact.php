@@ -27,9 +27,9 @@
         <a class="sr-only sr-only-focusable visually-hidden" aria-label="skip navigation" href="#main">
             Skip to main content</a>
          <!-- HEADER: LOGO, NAV -->
-        <header class="container-fluid position-sticky" style="">
+        <header class="container-fluid position-sticky">
             <!-- NAVIGATION BAR WITH STICKY POSITION-->
-            <nav role="navigation" class="navbar navbar-expand-sm navbar-light bg-light">
+            <nav role="navigation" class="navbar navbar-expand-sm navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="/assets/busybeelogo.png" alt="Busy Bee Logo" 
@@ -70,37 +70,45 @@
         <!-- BREADCRUMB NAVIGATION FOR ARIA USERS-->
         <main>
             <div class="text-center"><h1>Don't Bee a Stranger!</h1></div>
-            <form title="Contact Form" class="p-5 mb-3" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" 
-            method="POST" autocomplete="off" style="background-color:#FFCC33; color:">
-                <div class="text-center m-0 p-0"><h2 style="font-size:2em;">Contact Us</h2></div>
-                <div class="form-floating" id="form-info">
-                    <p class="text-center"><em>* All fields are required</em></p>
+            <div class="row">
+                <div class="col-sm-7">
+                    <embed src="/assets/Busy Bee Contact.pdf" height="100%"
+                    style="width:100%;"/>
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="name" name="name"
-                    placeholder="" required aria-required="true">
-                    <label for="name" class="form-label">Name</label>
+                <div class="col-sm-5">
+                    <form title="Contact Form" class="p-5 mb-3" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" 
+                    method="POST" autocomplete="off" style="background-color:#FFCC33; color:">
+                        <div class="text-center m-0 p-0"><h2 style="font-size:2em;">Contact Us</h2></div>
+                        <div class="form-floating" id="form-info">
+                            <p class="text-center"><em>* All fields are required</em></p>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" name="name"
+                            placeholder="" required aria-required="true">
+                            <label for="name" class="form-label">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel" class="form-control" id="phone" name="phone"
+                            placeholder="" required aria-required="true">
+                            <label for="phone" class="form-label">Phone</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" name="email"
+                            placeholder="" required aria-required="true">
+                            <label for="email" class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" name="message" 
+                            placeholder="" style="height:8rem;" required aria-required="true"></textarea>
+                            <label for="message" class="form-label">Message</label>
+                        </div>
+                        <div class="d-grid gap-2 mx-auto" id="submit-button" 
+                        style="width:50%;" aria-roledescription="submit-button">
+                        <button class="btn btn-lg btn-dark" type="submit" name="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-floating mb-3">
-                    <input type="tel" class="form-control" id="phone" name="phone"
-                    placeholder="" required aria-required="true">
-                    <label for="phone" class="form-label">Phone</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="email" name="email"
-                    placeholder="" required aria-required="true">
-                    <label for="email" class="form-label">Email Address</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" name="message" 
-                    placeholder="" style="height:8rem;" required aria-required="true"></textarea>
-                    <label for="message" class="form-label">Message</label>
-                </div>
-                <div class="d-grid gap-2 mx-auto" id="submit-button" 
-                style="width:50%;" aria-roledescription="submit-button">
-                <button class="btn btn-lg btn-dark" type="submit" name="submit">Submit</button>
-                </div>
-            </form>
+
             <div>
 
 

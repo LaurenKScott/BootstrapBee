@@ -8,7 +8,7 @@
         if (is_null($message)) {
             echo 'Please enter a message';
         }
-        }else{
+        else{
             $mail_to = 'prancerrulz3794@gmail.com';
             $subject_line = 'Mail from Website User';
             $body = 
