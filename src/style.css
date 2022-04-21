@@ -35,7 +35,7 @@ header {
 #portal {
     padding: 1em;
     text-align: center;
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
 }
 #portal-instr {
     font-style: italic;
