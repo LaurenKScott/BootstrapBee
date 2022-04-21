@@ -1,7 +1,6 @@
 body {
     font-family: Helvetica, sans-serif;
     color:black;
-    background-color: rgb(245, 245, 99);
 }
 #covid {
     width: 100%;
@@ -45,12 +44,18 @@ header {
     text-decoration: none;
 }
 .rolodex {
-    display: inline-flex;
+    display: none;
+    visibility: hidden;
     font-size: larger;
+
 }
 .rolo-words {
     
     list-style-type: none;
+}
+.programs {
+    height: 100%;
+    width: auto;
 }
 #socials {
     display:inline-block;
