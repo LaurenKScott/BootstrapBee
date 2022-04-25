@@ -20,7 +20,9 @@
         function expandCard() {
             var btnText = document.getElementById("read-more");
             var more = document.getElementById("card-list");
-            more.style.display = "none";
+            if (more.style.display === "none") {
+                more.style.display = "block";
+            }
         }
     </script>
  </head>
@@ -98,7 +100,7 @@
                     <h4 class="card-title p-2 text-center">Infants</h4>
                     <div class="card-text p-2">
                         <p class="program-sub">A full day program for children 4 weeks to 15 months</p>
-                        <ul class="list-unstyled" id="card-list">
+                        <ul class="list-unstyled" id="card-list" style="display:none;">
                             <li>Develop social skills & friendships</li>
                             <li>Develop verbal skills</li>
                             <li>Explore & become curious</li>
@@ -107,7 +109,7 @@
                             <li></li>
                             <li></li>
                         </ul>
-                        <btn class="btn btn-lg btn-light" id="read-more" onclick="expandCard()"></btn>
+                        <btn class="btn btn-light d-block mx-auto" id="read-more" onclick="expandCard()">Learn More</btn>
                     </div>
                 </div>
             </div> 
@@ -116,7 +118,7 @@
                     <h4 class="card-title p-2 text-center">Toddlers</h5>
                     <div class="card-text p-2">
                         <p class="program-sub">A full day program for children 15 months to 2.9 years</p>
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled" id="card-list">
                             <li>Develop verbal & language skills</li>
                             <li>Develop good eating habits</li>
                             <li>Learn to separate from family with ease</li>
@@ -136,7 +138,7 @@
                     <div class="hr"></div>
                     <div class="card-text p-2">
                         <p class="program-sub">A full day program for children 2.9 to 4 years old</p>
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled" id="card-list">
                             <li>Building communication skills</li>
                             <li>Growing independence</li>
                             <li>Recognition of some shapes & numbers</li>
@@ -152,7 +154,7 @@
                     <div class="hr"></div>
                     <div class="card-text p-2">
                         <p class="program-sub">A full day program for children 4-5 years old</p>
-                        <ul class="list-unstyled">
+                        <ul class="list-unstyled" id="card-list">
                             <li>Reading readiness</li>
                             <li>Music and Art</li>
                             <li>Self-Awareness and increased confidence</li>
