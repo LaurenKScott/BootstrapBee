@@ -1,6 +1,6 @@
 body {
     font-family: Helvetica, sans-serif;
-    background-color: rgb(253, 253, 110);
+    background-color: rgba(253, 253, 110, 0.9);
     color:black;
 }
 #covid {
@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #header-logo {
@@ -28,6 +28,14 @@ header {
     max-width: 100%;
     max-height: min-content;
     object-fit: contain;
+}
+#contact-form {
+    background-color: rgba(255, 79, 0, 0.8);
+    color: white;
+    border-radius: 5%;
+}
+#contact-form > * > label {
+    color: black;
 }
 .gal-imgs {
     max-width: 100%;
@@ -82,5 +90,5 @@ header {
     color:black;
 }
 footer {
-    background-color: rgb(255, 255, 104);
+    background-color: rgba(255, 255, 255, 1);
 }

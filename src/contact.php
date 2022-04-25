@@ -20,14 +20,14 @@
     </head>
 
     <!-- BODY: THE START OF THE PAGE CONTENT -->
-    <body class="container-fluid" style="">
+    <body class="container-fluid">
 
         <!-- PHP INFORMATION AND CONTENT -->
         <?php include("handler.php");?>
         <a class="sr-only sr-only-focusable visually-hidden" aria-label="skip navigation" href="#main">
             Skip to main content</a>
          <!-- HEADER: LOGO, NAV -->
-        <header class="container-fluid position-sticky">
+        <header class="">
             <!-- NAVIGATION BAR WITH STICKY POSITION-->
             <nav role="navigation" class="navbar navbar-expand-sm navbar-light">
             <div class="container-fluid">
@@ -69,16 +69,16 @@
 
         <!-- BREADCRUMB NAVIGATION FOR ARIA USERS-->
         <main>
-            <div class="text-center p-2 mb-2"><h1>Don't Bee a Stranger!</h1></div>
+            <div class="text-center p-4"><h1>Don't Bee a Stranger!</h1></div>
             <div class="row">
                 <div class="col-sm-7">
-                    <embed src="/assets/Busy_Bee_Contact.pdf" height="100%"
-                    style="width:100%;"/>
+                    <iframe src="/assets/Busy_Bee_Contact.pdf" id="contact-info"  height="100%"
+                    style="width:100%; border:0;"></iframe>
                 </div>
                 <div class="col-sm-5">
                     <form title="Contact Form" class="p-5 mb-3" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" 
-                    method="POST" autocomplete="off" style="background-color:#FFCC33; color:">
-                        <div class="text-center m-0 p-0"><h2 style="font-size:2em;">Contact Us</h2></div>
+                    method="POST" autocomplete="off" id="contact-form">
+                        <div class="text-center m-0 p-0"><h2 id="form-title">Contact Us</h2></div>
                         <div class="form-floating" id="form-info">
                             <p class="text-center"><em>* All fields are required</em></p>
                         </div>
@@ -109,12 +109,10 @@
                     </form>
                 </div>
 
-            <div>
-
-
-            </div>
+            <div class="row gy-5"></div>
         </main>
-        <footer class="d-flex justify-content-center">
+        
+        <footer class="d-flex pt-3 justify-content-center">
         <ul class="btn-group mx-auto" id="socials" role="group" aria-label="social media links">
             <a class="btn" role="button"
             href="https://www.facebook.com/BusyBeeChildCareMA" target="_blank" aria-label="facebook">
@@ -134,7 +132,8 @@
             </a>
             
         </div>
+        <p class="text-muted text-center mt-2">Copyright Busy Bee Preschool 2022</p>
     </footer>
-    <p class="text-muted text-center">Copyright Busy Bee Preschool 2022</p>
+    
     </body>
 </html>
