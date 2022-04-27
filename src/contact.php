@@ -108,8 +108,6 @@
                         </div>
                     </form>
                 </div>
-
-            <div class="row gy-5"></div>
         </main>
         
         <footer class="d-flex pt-3 justify-content-center">

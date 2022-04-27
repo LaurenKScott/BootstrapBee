@@ -1,6 +1,5 @@
 body {
     font-family: Helvetica, sans-serif;
-    background-color: rgba(253, 253, 110, 0.9);
     color:black;
 }
 #covid {
@@ -59,15 +58,44 @@ header {
     font-size: larger;
 }
 .rolo-words {
-    
     list-style-type: none;
 }
+.hex-wrap {
+    display: block;
+    clip-path: polygon(25% 0%, 75% 0%, 95% 50%, 75% 100%, 25% 100%, 5% 50%);
+}
 .programs {
-    height: 100%;
-    width: auto;
+    margin: auto;
+    padding: 5% 15% 5% 15%;
+}
+#inf {
+    background-color:#1AECFF;
+}
+#tod {
+    background-color: #fd3838;
+    color: white;
+}
+#nurs {
+    background-color: #9EFD38;
+}
+#prek {
+    background-color: #9930fb;
+    color: white;
+}
+#summer {
+    background-color: #ffe538;
+}
+.program-title {
+    text-align: center;
+    padding-top: 0%;
+    margin-top: 0%;
 }
 .program-sub {
+    text-align: center;
     font-style: italic;
+}
+.program-details {
+    display: none;
 }
 
 #socials {
