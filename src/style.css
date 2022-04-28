@@ -62,11 +62,14 @@ header {
 }
 .hex-wrap {
     display: block;
-    clip-path: polygon(25% 0%, 75% 0%, 95% 50%, 75% 100%, 25% 100%, 5% 50%);
+    margin: auto;
+    overflow: hidden;
+    width: 80%;
+    border-radius: 25px 5px;
 }
 .programs {
     margin: auto;
-    padding: 5% 15% 5% 15%;
+    padding: 5%;
 }
 #inf {
     background-color:#1AECFF;
@@ -94,6 +97,7 @@ header {
     text-align: center;
     font-style: italic;
 }
+
 .program-details {
     display: none;
 }
