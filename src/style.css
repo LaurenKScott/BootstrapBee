@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(255, 251, 243);
 }
 
 #header-logo {
@@ -60,12 +60,13 @@ header {
 .rolo-words {
     list-style-type: none;
 }
-.hex-wrap {
+.pro-wrap {
     display: block;
     margin: auto;
     overflow: hidden;
     width: 80%;
     border-radius: 25px 5px;
+    background-color:#1AECFF;
 }
 .programs {
     margin: auto;
@@ -76,14 +77,12 @@ header {
 }
 #tod {
     background-color: #fd3838;
-    color: white;
 }
 #nurs {
     background-color: #9EFD38;
 }
 #prek {
     background-color: #9930fb;
-    color: white;
 }
 #summer {
     background-color: #ffe538;
