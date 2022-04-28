@@ -1,5 +1,6 @@
 body {
     font-family: Helvetica, sans-serif;
+    background-color: #ffe96a;
     color:black;
 }
 #covid {
@@ -8,7 +9,7 @@ body {
 }
 
 header {
-    background-color: rgb(255, 251, 243);
+    background-color: rgb(154, 247, 255);
 }
 
 #header-logo {
@@ -64,8 +65,8 @@ header {
     display: block;
     margin: auto;
     overflow: hidden;
-    width: 80%;
-    border-radius: 25px 5px;
+    max-width: 90%;
+    border-radius: 50%;
     background-color:#1AECFF;
 }
 .programs {
@@ -77,6 +78,7 @@ header {
 }
 #tod {
     background-color: #fd3838;
+    color: white;
 }
 #nurs {
     background-color: #9EFD38;
@@ -85,7 +87,7 @@ header {
     background-color: #9930fb;
 }
 #summer {
-    background-color: #ffe538;
+    background-color: #fda727;
 }
 .program-title {
     text-align: center;
