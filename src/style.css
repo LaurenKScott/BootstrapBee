@@ -1,6 +1,6 @@
 body {
     font-family: Helvetica, sans-serif;
-    background-color: #140c4a;
+    background-color: #ffffff;
     color:white;
 }
 #covid {
@@ -66,6 +66,7 @@ header {
     border-radius: 50%;
     width: 90%; 
     height: max-content;
+    background-color: rgb(67, 168, 0);
 }
 .programs {
     padding: 5%;
@@ -85,29 +86,18 @@ header {
 }
 .program-sub {
     font-style: italic;
+    text-align: center;
     display: none;
 }
-
+.pro-wrap:hover .program-icon {
+    visibility: visible;
+}
+.pro-wrap:hover .program-sub {
+    display: block;
+}
 .program-details {
     display: none;
 }
-#inf {
-    background-color:#1AECFF;
-}
-#tod {
-    background-color: #fd3838;
-    color: white;
-}
-#nurs {
-    background-color: #9EFD38;
-}
-#prek {
-    background-color: #9930fb;
-}
-#summer {
-    background-color: #fda727;
-}
-
 
 #socials {
     display:inline-block;
