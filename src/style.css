@@ -54,6 +54,10 @@ header {
 #portal-instr {
     font-style: italic;
 }
+#archive {
+    transform: translateY(15%);
+}
+
 .form-links {
     text-decoration: none;
 }
