@@ -114,8 +114,8 @@ header {
     list-style-type: '* ';
 }
 #socials {
-    display:inline-block;
     list-style-type: none;
+    width: 80%;
 }
 #socials > a > i {
     font-size: 36px;
@@ -138,3 +138,4 @@ header {
 footer {
     background-color: rgba(255, 255, 255, 1);
 }
+
