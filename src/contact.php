@@ -69,7 +69,8 @@
 
         <!-- BREADCRUMB NAVIGATION FOR ARIA USERS-->
         <main>
-            <div class="text-center p-4"><h1>Don't Bee a Stranger!</h1></div>
+            <div class="text-center p-4">
+                <h1 class="display-3" id="page-title">Contact Us</h1></div>
             <div class="row">
                 <div class="col-sm-7">
                     <iframe src="/assets/Busy_Bee_Contact.pdf" id="contact-info"  height="100%"
@@ -78,7 +79,9 @@
                 <div class="col-sm-5">
                     <form title="Contact Form" class="p-5 mb-3" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" 
                     method="POST" autocomplete="off" id="contact-form">
-                        <div class="text-center m-0 p-0"><h2 id="form-title">Contact Us</h2></div>
+                        <div class="text-center m-0 p-0">
+                            <h2 id="form-title">Don't Bee a Stranger!</h2>
+                        </div>
                         <div class="form-floating" id="form-info">
                             <p class="text-center"><em>* All fields are required</em></p>
                         </div>

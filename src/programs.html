@@ -18,18 +18,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         function expandCard(cardId, wrapperId) {
-            var hex = document.getElementById(wrapperId);
+            var wrap = document.getElementById(wrapperId);
             var more = document.getElementById(cardId);
-            
             var moreDisplay = getComputedStyle(more).display;
             if (moreDisplay === "none") {
-            
                 more.style.display = "block";
-                hex.style.borderRadius = "10%";
+                wrap.style.height = "100%"
+                wrap.style.borderRadius = "10%";
             }else {
                 
                 more.style.display = "none";
-                hex.style.borderRadius = "50%";
+                wrap.style.borderRadius = "50%";
             }
         }
     </script>
@@ -134,12 +133,12 @@
                         <div class="p-1">
                             <p class="program-sub" id="sub2">Ages 15 months to 2.9 years</p>
                             <ul class="list-unstyled program-details" id="tod-detail">
-                                <li>Develop social skills & friendships</li>
-                                <li>Develop verbal skills</li>
-                                <li>Explore & become curious</li>
-                                <li>Bond with others</li>
-                                <li>Develop fine motor skills & large motor skills</li>
-                                
+                                <li>Develop verbal & language skills</li>
+                                <li>Develop good eating habits</li>
+                                <li>Learn to separate from family with ease</li>
+                                <li>Develop academic awareness</li>
+                                <li>Build attention spans</li>
+                                <li>Following routines independently </li>
                             </ul>
                         </div>
                     </div>
@@ -149,7 +148,7 @@
                 <div class="pro-wrap" id="pro3" onclick="expandCard('nurs-detail','pro3')">
                     <div class="programs" id="nurs">
                         <h4 class="program-title">Nursery</h4>
-                        <img class="program-icon" src="/assets/blocksicon.svg">
+                        <img class="program-icon" src="/assets/puzzle.svg">
                         <div class="p-1">
                             <p class="program-sub">Ages 2.9 to 4 years</p>
                             <ul class="list-unstyled program-details" id="nurs-detail">
@@ -168,7 +167,7 @@
                 <div class="pro-wrap" id="pro4" onclick="expandCard('prek-detail', 'pro4')">
                     <div class="programs" id="prek">
                         <h4 class="program-title">Pre-K</h4>
-                        <img class="program-icon" src="/assets/blocksicon.svg">
+                        <img class="program-icon" src="/assets/magnifier.svg">
                         <div class="p-1">
                             <p class="program-sub">Ages 4 to 5 years</p>
                             <ul class="list-unstyled program-details" id="prek-detail">
