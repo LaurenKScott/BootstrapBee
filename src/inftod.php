@@ -1,16 +1,16 @@
 <?php 
 session_start();
 if (isset($_POST["submit"])){
-    
-    $target_path = "/assets/uploads/";
-    $target_file = $target_path . basename( $_FILES['try_file']['name']);
-    if(move_uploaded_file($_FILES['try_file']['name'], $target_file)) {
+    $target_path = "/Users/lauren/Documents/PROJECTS/BootstrapBee/assets/uploads";
+    $target_file = $target_path.basename( $_FILES['try_file']['name']);
+    if(move_uploaded_file($_FILES['try_file']['tmp_name'], $target_file)) {
         echo "<h3 style='color:green;'>Upload successful</h3>";
     }else {
         echo "<h3>Upload failed</h3>";
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,19 +84,6 @@ if (isset($_POST["submit"])){
 <main class="container-fluid">
     <div class="row">
         <h1 class="text-center display-3" id="page-title">Infant and Toddler News</h1>
-    </div>
-    <div class="row">
-    <div class="text-center">
-        <form class="p-5 text-center" id="upload-form" 
-        action="<?php echo $_SERVER['PHP_SELF'];?>"  enctype="multipart/form-data" method="POST">
-            <div class="form-floating">
-                <input class="form-control" type="text" id="post-text" name="post-text" placeholder=""> 
-                <label for="post-text" class="form-label">Write something here...</label>
-            </div>
-            <input class="form-control" type="file" id="myFile" name="try_file">
-            <input type="submit" value="Submit" name="submit" id="upload-submit">
-        </form>
-    </div>
     </div>
     <div class="row">
         <div class="col-md-10 p-0">

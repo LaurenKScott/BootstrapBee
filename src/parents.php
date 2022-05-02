@@ -30,9 +30,13 @@ function validate($data){
 // PLACEHOLDER. NEED TO ADD HASHING FUNCTION FOR LATER
 $infpassword = 'infants2022';
 $prepassword = 'preschool2022';
+$adminpassword = 'busybee2022!'
 if (isset($_POST['password'])) {
     $try_pass = validate($_POST['password']);
-    if ($try_pass == $infpassword) {
+    if ($try_pass == $adminpassword) {
+        header('Location: /src/upload.php')
+    }
+    elseif ($try_pass == $infpassword) {
         header('Location: /src/inftod.php');
     }
     elseif ($try_pass == $prepassword) {
