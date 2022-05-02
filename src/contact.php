@@ -68,9 +68,10 @@
         </header>
 
         <!-- BREADCRUMB NAVIGATION FOR ARIA USERS-->
-        <main>
-            <div class="text-center p-4">
-                <h1 class="display-3" id="page-title">Contact Us</h1></div>
+        <main class="container-fluid">
+            <div class="text-center p-2" id="page-title">
+                <h1 class="display-3">Contact Us</h1>
+            </div>
             <div class="row">
                 <div class="col-sm-7">
                     <iframe src="/assets/Busy_Bee_Contact.pdf" id="contact-info"  height="100%"

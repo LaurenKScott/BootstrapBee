@@ -91,8 +91,8 @@ if (isset($_POST['password'])) {
     <main class="container-fluid">
         <!--  LOGIN FORM FOR PARENTS -->
         <div class="row">
-            <div class="col rounded p-2" id="page-title">
-                <h1 class="text-center">Parent Resources</h1>
+            <div class="p-2" id="page-title">
+                <h1 class="text-center display-3">Parent Resources</h1>
             </div>
         </div>
         <div class="row">
