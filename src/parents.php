@@ -30,7 +30,7 @@ function validate($data){
 // PLACEHOLDER. NEED TO ADD HASHING FUNCTION FOR LATER
 $infpassword = 'infants2022';
 $prepassword = 'preschool2022';
-$adminpassword = 'busybee2022!'
+$adminpassword = 'busybee2022!';
 if (isset($_POST['password'])) {
     $try_pass = validate($_POST['password']);
     if ($try_pass == $adminpassword) {
