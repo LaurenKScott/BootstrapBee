@@ -20,11 +20,14 @@
         function expandCard(cardId, wrapperId) {
             var hex = document.getElementById(wrapperId);
             var more = document.getElementById(cardId);
+            
             var moreDisplay = getComputedStyle(more).display;
             if (moreDisplay === "none") {
+            
                 more.style.display = "block";
                 hex.style.borderRadius = "10%";
             }else {
+                
                 more.style.display = "none";
                 hex.style.borderRadius = "50%";
             }
@@ -79,7 +82,7 @@
     </header>
 
     <!-- MAIN CONTENT -->
-    <main class="container-fluid p-3">
+    <main class="container-fluid p-1">
         <div class="rounded p-2" id="page-title">
             <h1 class="text-center">Programs & Curriculum</h1>
         </div>
@@ -95,13 +98,16 @@
             </ul>
             </p>
         </div>
-        <div class="row" id="program-promise"><p style="font-style:italic;">All of our programs are developed to build specific goals that are developmentally
+        <div class="row g-0" id="program-promise"><p style="font-style:italic;">All of our programs are developed to build specific goals that are developmentally
         appropriate to each age group and each child, while also keeping your child safe, loved,
-        and well cared for.</p></div>
+        and well cared for.</p>
+       
+        </div>
         
-        <div class="row gx-0">
-            <h3 class="text-center">Full day programs</h3>
-            <div class="col">
+        <div class="row g-2 p-3 text-center" id="prog-row">
+            <h3>Full day programs</h3>
+            <p> Click each bubble below to learn more!</p>
+            <div class="col-md">
                 <div class="pro-wrap" id="pro1" onclick="expandCard('inf-detail', 'pro1')">
                     <div class="programs" id="inf">
                         <h4 class="program-title">Infants</h4>
@@ -121,13 +127,13 @@
                     </div>
                 </div>
             </div> 
-            <div class="col">
-                <div class="pro-wrap" id="pro2" onclick="expandCard('tod-detail', 'pro2')">
+            <div class="col-md">
+                <div class="pro-wrap" id="pro2" onclick="expandCard('tod-detail', 'pro2', 'sub2')">
                     <div class="programs" id="tod">
                         <h4 class="program-title">Toddlers</h4>
                         <img class="program-icon" src="/assets/blocksicon.svg">
                         <div class="p-1">
-                            <p class="program-sub">Ages 15 months to 2.9 years</p>
+                            <p class="program-sub" id="sub2">Ages 15 months to 2.9 years</p>
                             <ul class="list-unstyled program-details" id="tod-detail">
                                 <li>Develop social skills & friendships</li>
                                 <li>Develop verbal skills</li>
@@ -141,7 +147,7 @@
                     </div>
                 </div>
             </div> 
-            <div class="col">
+            <div class="col-md">
                 <div class="pro-wrap" id="pro3" onclick="expandCard('nurs-detail','pro3')">
                     <div class="programs" id="nurs">
                         <h4 class="program-title">Nursery</h4>
@@ -161,7 +167,7 @@
                     </div>
                 </div>
             </div> 
-            <div class="col">
+            <div class="col-md">
                 <div class="pro-wrap" id="pro4" onclick="expandCard('prek-detail', 'pro4')">
                     <div class="programs" id="prek">
                         <h4 class="program-title">Pre-K</h4>
@@ -181,11 +187,11 @@
                     </div>
                 </div>
             </div> 
-            <div class="col">
+            <div class="col-md">
                 <div class="pro-wrap" id="pro5" onclick="expandCard('summer-detail', 'pro5')">
                     <div class="programs" id="summer">
                         <h4 class="program-title">Summer</h4>
-                        <img class="program-icon" src="/assets/blocksicon.svg">
+                        <img class="program-icon" src="/assets/sun.svg">
                         <div class="p-1">
                             <p class="program-sub">All ages</p>
                             <ul class="list-unstyled program-details" id="summer-detail">
