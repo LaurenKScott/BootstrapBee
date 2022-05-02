@@ -1,3 +1,16 @@
+<?php 
+session_start();
+if (isset($_POST["submit"])){
+    
+    $target_path = "/assets/uploads/";
+    $target_file = $target_path . basename( $_FILES['try_file']['name']);
+    if(move_uploaded_file($_FILES['try_file']['name'], $target_file)) {
+        echo "<h3 style='color:green;'>Upload successful</h3>";
+    }else {
+        echo "<h3>Upload failed</h3>";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +43,7 @@
     <!-- HEADER: LOGO, NAV -->
     <header class="container-fluid">
         <!-- NAVIGATION BAR WITH STICKY POSITION-->
-        <nav role="navigation" class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav role="navigation" class="navbar navbar-expand-sm navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="/assets/busybeelogo.png" alt="Busy Bee Logo" 
@@ -68,34 +81,51 @@
     <!-- END HEADER -->
     </header>
 
-<main class="d-flex">
-    <div class="col-md-10 p-0">
-        <h1 class="text-center display-3" id="page-title">Infant and Toddler Newsletter</h1>
-        <h2 class="text-center" id="news-title">April 2022</h2>
-        <div class="mx-auto d-flex justify-content-center"  id="current">
-            <iframe src="/assets/4_2022_IT_Newsletter.pdf" name="current" width="90%" height="1200px"></iframe>
-        </div>
+<main class="container-fluid">
+    <div class="row">
+        <h1 class="text-center display-3" id="page-title">Infant and Toddler News</h1>
     </div>
-    <aside class="p-0 col-md-2 mx-auto" id="archive">
-        <div class="text-center">
-            <h3 class="fst-italic">Archives</h3>
-            <ol class="list-group list-unstyled p-0 m-0 text-center">
-                <li class="list-group-item p-1"><a href="#" target="current">May 2022</a></li>
-                <li class="list-group-item p-1">
-                    <a href="/assets/4_2022_IT_Newsletter.pdf" target="current" onclick="ChangeMonth('April 2022')">April 2022</a>
-                </li>
-                <li class="list-group-item p-1">
-                    <a href="/assets/3_2022_IT_Newsletter.pdf" target="current" onclick="ChangeMonth('March 2022')">March 2022</a>
-                </li>
-                <li class="list-group-item p-1"><a href="#" target="current">February 2022</a></li>
-                <li class="list-group-item p-1"><a href="#" target="current">January 2022</a></li>
-                <li class="list-group-item p-1"><a href="#" target="current">December 2021</a></li>
-                <li class="list-group-item p-1"><a href="#" target="current">November 2021</a></li>
-                <li class="list-group-item p-1"><a href="#" target="current">October 2021</a></li>
-                <li class="list-group-item p-1"><a href="#" target="current">September 2021</a></li>
-            </ol>
+    <div class="row">
+    <div class="text-center">
+        <form class="p-5 text-center" id="upload-form" 
+        action="<?php echo $_SERVER['PHP_SELF'];?>"  enctype="multipart/form-data" method="POST">
+            <div class="form-floating">
+                <input class="form-control" type="text" id="post-text" name="post-text" placeholder=""> 
+                <label for="post-text" class="form-label">Write something here...</label>
+            </div>
+            <input class="form-control" type="file" id="myFile" name="try_file">
+            <input type="submit" value="Submit" name="submit" id="upload-submit">
+        </form>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10 p-0">
+            <h2 class="text-center" id="news-title">April 2022</h2>
+            <div class="mx-auto d-flex justify-content-center"  id="current">
+                <iframe src="/assets/4_2022_IT_Newsletter.pdf" name="current" width="90%" height="1200px"></iframe>
+            </div>
         </div>
-    </aside>
+        <aside class="p-0 col-md-2 mx-auto" id="archive">
+            <div class="text-center">
+                <h3 class="fst-italic">Archives</h3>
+                <ol class="list-group list-unstyled p-0 m-0 text-center">
+                    <li class="list-group-item p-1"><a href="#" target="current">May 2022</a></li>
+                    <li class="list-group-item p-1">
+                        <a href="/assets/4_2022_IT_Newsletter.pdf" target="current" onclick="ChangeMonth('April 2022')">April 2022</a>
+                    </li>
+                    <li class="list-group-item p-1">
+                        <a href="/assets/3_2022_IT_Newsletter.pdf" target="current" onclick="ChangeMonth('March 2022')">March 2022</a>
+                    </li>
+                    <li class="list-group-item p-1"><a href="#" target="current">February 2022</a></li>
+                    <li class="list-group-item p-1"><a href="#" target="current">January 2022</a></li>
+                    <li class="list-group-item p-1"><a href="#" target="current">December 2021</a></li>
+                    <li class="list-group-item p-1"><a href="#" target="current">November 2021</a></li>
+                    <li class="list-group-item p-1"><a href="#" target="current">October 2021</a></li>
+                    <li class="list-group-item p-1"><a href="#" target="current">September 2021</a></li>
+                </ol>
+            </div>
+        </aside>
+    </div>
 </main>
 
 <footer class="mt-5">

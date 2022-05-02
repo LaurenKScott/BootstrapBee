@@ -33,7 +33,7 @@ $prepassword = 'preschool2022';
 if (isset($_POST['password'])) {
     $try_pass = validate($_POST['password']);
     if ($try_pass == $infpassword) {
-        header('Location: /src/inftod.html');
+        header('Location: /src/inftod.php');
     }
     elseif ($try_pass == $prepassword) {
         header('Location: /src/prek.html');
@@ -96,17 +96,20 @@ if (isset($_POST['password'])) {
             </div>
         </div>
         <div class="row">
-            <div class ="col" id="portal">
+            <div class="col-sm-7">.</div>
+            <div class ="col-sm-4" id="portal">
+    
                 <h2>Class Portal Login</h2>
                 <p id="portal-instr">Type your class password here to access our monthly newsletter</p> 
                 <form title='login' method='POST' action='' autocomplete='off'>
                 <div style='display:inline-block;'>
                     <label for='password'>Password</label>
-                    <input type='text' name='password' id='password' required aria-required='true'> 
+                    <input type='password' name='password' id='password' required aria-required='true'> 
                 </div>
                 <button class='btn btn-light border-dark' type="submit" name='submit'>Submit</button>
                 </form>
             </div>
+            <div class="col-sm-1">.</div>
         </div>
 
         

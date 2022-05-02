@@ -13,7 +13,7 @@ header {
     color: rgb(58, 58, 58);
 }
 #denise-card {
-    background-color: rgba(255, 253, 220, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 .teacher-imgs {
     width:100%;
@@ -39,6 +39,7 @@ header {
     color: white;
     font-weight: 500;
     text-align: center;
+    padding: 3px;
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -136,7 +137,10 @@ header {
     margin-left: 5px;
     list-style-type: '* ';
 }
-
+#upload-form {
+    width: 50%;
+    margin: auto;
+}
 #socials {
     list-style-type: none;
     width: 80%;
