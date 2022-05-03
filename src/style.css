@@ -1,6 +1,6 @@
 body {
     font-family: 'Candara', 'Poppins', Tahoma, sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color:rgb(128, 200, 255);
     color:black;
 }
 #covid {
@@ -9,7 +9,10 @@ body {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    padding:0;
+    margin: 0;
     color: rgb(58, 58, 58);
 }
 #denise-card {

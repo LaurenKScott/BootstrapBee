@@ -34,7 +34,7 @@ $adminpassword = 'busybee2022!';
 if (isset($_POST['password'])) {
     $try_pass = validate($_POST['password']);
     if ($try_pass == $adminpassword) {
-        header('Location: /src/upload.php')
+        header('Location: /src/upload.php');
     }
     elseif ($try_pass == $infpassword) {
         header('Location: /src/inftod.php');
