@@ -34,13 +34,13 @@ $adminpassword = 'busybee2022!';
 if (isset($_POST['password'])) {
     $try_pass = validate($_POST['password']);
     if ($try_pass == $adminpassword) {
-        header('Location: /src/upload.php');
+        header('Location: upload.php');
     }
     elseif ($try_pass == $infpassword) {
-        header('Location: /src/inftod.php');
+        header('Location: inftod.php');
     }
     elseif ($try_pass == $prepassword) {
-        header('Location: /src/prek.html');
+        header('Location: prek.html');
     }
     else {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -100,11 +100,10 @@ if (isset($_POST['password'])) {
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-7">.</div>
-            <div class ="col-sm-4" id="portal">
-    
+            
+            <div class ="col text-center" id="portal">
+                <p class="lead">If you are a Busy Bee parent, use the portal below to find information on your child's class!</p>
                 <h2>Class Portal Login</h2>
-                <p id="portal-instr">Type your class password here to access our monthly newsletter</p> 
                 <form title='login' method='POST' action='' autocomplete='off'>
                 <div style='display:inline-block;'>
                     <label for='password'>Password</label>
@@ -112,25 +111,16 @@ if (isset($_POST['password'])) {
                 </div>
                 <button class='btn btn-light border-dark' type="submit" name='submit'>Submit</button>
                 </form>
+                <p id="portal-instr">Type your class password here</p> 
             </div>
-            <div class="col-sm-1">.</div>
+           
         </div>
 
         
         <!-- END PORTAL LOGIN -->
         <div class="row">
-            <div class="col d-flex justify-content-center">
-                <ul class="list-unstyled">
-                    <h3>Forms</h3>
-                    <li><a class="form-links" href="/assets/PhysicalForm.pdf" target="_blank">Physical</a></li>
-                    <li><a class="form-links" href="/assets/MedicationConsent.pdf" target="_blank">Medication Consent</a></li>
-                    <li><a class="form-links" href="" target="_blank">Sunscreen</a></li>
-                    <li><a class="form-links" href="/assets/TylenolForm.pdf" target="_blank">Tylenol</a></li>
-                <ul>
-            </div>
-            <div class="col"></div>
-            <div class="col d-flex justify-left">
-                <ul class="list-unstyled">
+            <div class="col d-flex justify-content-right">
+            <ul class="list-unstyled">
                     <h3>Resources</h3>
                     <li><a class="form-links" href="#">Good Manners</a></li>
                     <li><a class="form-links" href="#">Play</a></li>
@@ -138,9 +128,21 @@ if (isset($_POST['password'])) {
                     <li><a class="form-links" href="#">Self Control</a></li>
                     <li><a class="form-links" href="#">Establishing Routines</a></li>
                     <li><a class="form-links" href="#">Children & Anxiety</a></li>
+
             </div>
         </div>
-       
+        <div class="row">
+            <div class="col d-flex justify-content-right">
+            <ul class="list-unstyled">
+                    <h3>Forms</h3>
+                    <li><a class="form-links" href="/assets/PhysicalForm.pdf" target="_blank">Physical</a></li>
+                    <li><a class="form-links" href="/assets/MedicationConsent.pdf" target="_blank">Medication Consent</a></li>
+                    <li><a class="form-links" href="" target="_blank">Sunscreen</a></li>
+                    <li><a class="form-links" href="/assets/TylenolForm.pdf" target="_blank">Tylenol</a></li>
+            <ul>
+            </div>
+        </div>
+                
     </main>
     <footer class="mt-5">
         <!-- SOCIALS -->
