@@ -1,8 +1,18 @@
 <?php 
-session_start();
-
+function submit() {
+    $msg = '';
+    if (isset($_POST["submit"])){
+        $target_path = "/Users/lauren/Documents/PROJECTS/BootstrapBee/assets/uploads/";
+        $target_file = $target_path.basename( $_FILES['try_file']['name']);
+        if(move_uploaded_file($_FILES['try_file']['tmp_name'], $target_file)) {
+            $msg = 'Upload successful';
+        }else {
+            $msg = 'Upload failed';
+        }
+    }
+    return $msg;
+}
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,11 +77,11 @@ session_start();
         <div class="row text-center">
             <h1 class="display-2">Busy Bee File Uploader</h1>
         </div>
-        <div class="row">
-            <p class="lead text-center"> Important: Be sure to review each file before posting
+        <div class="row text-center">
+            <p class="lead"> Important: Be sure to review each file before posting
             </p>
         <div class="text-center">
-            <form class="p-5 text-center" id="upload-form" 
+            <form class="p-5" id="upload-form" 
             action="<?php echo $_SERVER['PHP_SELF'];?>"  enctype="multipart/form-data" method="POST">
                 <div class="form-floating">
                     <input class="form-control" type="text" id="post-text" name="post-text" placeholder=""> 
@@ -80,17 +90,12 @@ session_start();
                 <input class="form-control" type="file" id="try_File" name="try_file">
                 <input type="submit" value="Submit" name="submit" id="upload-submit">
             </form>
-        <?php 
-        if (isset($_POST["submit"])){
-            $target_path = "/Users/lauren/Documents/PROJECTS/BootstrapBee/assets/uploads/";
-            $target_file = $target_path.basename( $_FILES['try_file']['name']);
-            if(move_uploaded_file($_FILES['try_file']['tmp_name'], $target_file)) {
-                echo "<h3>Upload successful</h3>";
-            }else {
-                echo "<h3>Upload failed</h3>";
-            }
-        }
-        ?>
+        <div class="row text-center" id="form-post">
+            <?php
+            $msg = submit();
+            echo "<h3>" . $msg . "</h3>";
+            ?>
+        </div>
         </div>
         </div>
     </main>
