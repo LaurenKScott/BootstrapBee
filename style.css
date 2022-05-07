@@ -3,10 +3,10 @@ body {
     background: linear-gradient( rgba(255,255,255,1) 1%,
     rgb(74, 254, 152) 45%, rgb(0, 234, 255) 100%); 
     color:rgb(43, 0, 123);
-    font-size: 1.1em;
+    font-size: 1.05em;
 }
 body > * {
-    font-family: 'Poppins';
+    font-family: Tahoma;
 }
 #covid {
     width: 100%;
@@ -19,6 +19,12 @@ header {
     padding:0;
     margin: 0;
     color: rgb(58, 58, 58);
+}
+#page-title {
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 #denise-card {
     background-color: rgba(255, 255, 255, 0.9);
@@ -37,7 +43,7 @@ header {
 }
 #fb-jumbo {
     border-radius: 10px;
-    background-color: rgb(252, 210, 43);
+    background-color: rgb(255, 241, 82);
 }
 #fb-jumbo > h3 > a{
     text-decoration: none;
@@ -45,13 +51,6 @@ header {
 }
 #fb-jumbo > h3 > a:hover{
     color:rgb(43, 0, 123);
-}
-#page-title {
-    font-family: serif;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
 }
 #carousel-item {
     max-width: 100%;

@@ -1,14 +1,6 @@
 <?php 
 session_start();
-if (isset($_POST["submit"])){
-    $target_path = "/Users/lauren/Documents/PROJECTS/BootstrapBee/assets/uploads";
-    $target_file = $target_path.basename( $_FILES['try_file']['name']);
-    if(move_uploaded_file($_FILES['try_file']['tmp_name'], $target_file)) {
-        echo "<h3 style='color:green;'>Upload successful</h3>";
-    }else {
-        echo "<h3>Upload failed</h3>";
-    }
-}
+
 ?>
 
 <!DOCTYPE html>

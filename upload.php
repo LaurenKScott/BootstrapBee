@@ -26,8 +26,8 @@ function submit() {
 	<title>Busy Bee Child Care & Preschool</title>
 	<link rel="icon" href="/assets/beeicontransparent.png">
     <!-- BOOTSTRAP STYLESHEET AND SCRIPT LINKS (CDN)-->
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -38,7 +38,7 @@ function submit() {
         <nav role="navigation" class="container-fluid navbar navbar-expand-sm navbar-light ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    <img src="/assets/busybeelogo.png" alt="Busy Bee Logo" 
+                    <img src="assets/busybeelogo.png" alt="Busy Bee Logo" 
                     style="max-width:100%; height:auto;">
                 </a>
                 <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" 
@@ -75,7 +75,8 @@ function submit() {
 
     <main>
         <div class="row text-center">
-            <h1 class="display-2">Busy Bee File Uploader</h1>
+            <h1 class="display-2" id="page-title">
+                Busy Bee File Uploader</h1>
         </div>
         <div class="row text-center">
             <p class="lead"> Important: Be sure to review each file before posting
