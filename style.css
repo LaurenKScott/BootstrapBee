@@ -14,6 +14,7 @@ body > * {
 }
 
 header {
+    background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
     padding:0;
@@ -27,6 +28,7 @@ header {
     margin-bottom: 2%;
 }
 #denise-card {
+    background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.9);
 }
 .teacher-imgs {
@@ -55,9 +57,9 @@ header {
 #carousel-item {
     max-width: 100%;
     max-height: min-content;
-    object-fit: contain;
 }
 #contact-form {
+    background-color: rgb(92, 24, 228);
     background-color: rgba(92, 24, 228, 0.8);
     color: white;
     border-radius: 5%;
@@ -179,6 +181,6 @@ header {
      
 }
 footer {
+    background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.8);
 }
-
