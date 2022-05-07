@@ -81,30 +81,46 @@ function submit() {
         <div class="row text-center">
             <p class="lead"> Important: Be sure to review each file before posting
             </p>
+        </div>
         <div class="text-center">
-            <form class="p-5" id="upload-form" 
-            action="<?php echo $_SERVER['PHP_SELF'];?>"  enctype="multipart/form-data" method="POST">
+            <form class="p-5" id="upload-form" action="<?php echo $_SERVER['PHP_SELF'];?>"  
+            enctype="multipart/form-data" method="POST">
                 <div class="form-floating">
                     <input class="form-control" type="text" id="post-text" name="post-text" placeholder=""> 
                     <label for="post-text" class="form-label">Write something here...</label>
                 </div>
-                <input class="form-control" type="file" id="try_File" name="try_file">
+                <div class="">
+                    <input class="form-control" type="file" id="try_File" name="try_file">
+                </div>
+                <div class="custom-control custom-radio custom-control-inline d-inline">
+                    <input type="radio" id="class-select1" name="class-select1" class="custom-control-input">
+                    <label class="custom-control-label" for="class-select1">Class 1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline d-inline">
+                    <input type="radio" id="class-select2" name="class-select2" class="custom-control-input">
+                    <label class="custom-control-label" for="class-select2">Class 2</label>
+                </div>
+                <div class="d-block w-100">
                 <input type="submit" value="Submit" name="submit" id="upload-submit">
+                </div>
             </form>
+        </div>
         <div class="row text-center" id="form-post">
             <?php
             $msg = submit();
             echo "<h3>" . $msg . "</h3>";
             ?>
         </div>
-        </div>
-        </div>
+
     </main>
     <footer class="mt-5">
         <!-- SOCIALS -->
-        <div class="row">
+        <div class="row p-3">
             <div class="col-sm-3 text-center">
-                <h6>Content</h6>
+                <h4>Hours</h4>
+                <p><em>Open year-round!</em></p>
+                <p>Monday-Friday</p>
+                <p>7am - 5pm</p>
             </div>
             <div class="col-sm-6 text-center">
                 <ul class="btn-group" id="socials" role="group" aria-label="social media links">
@@ -131,7 +147,7 @@ function submit() {
                 <div class="col-sm-3"></div>
                 <!-- COPYRIGHT INFO -->
                 <div class="col-sm-6 text-center">
-                    <p class="text-muted">Copyright Busy Bee Preschool 2022</p>
+                    <p class="text-muted">Copyright Busy Bee Preschool 2022. All rights reserved.</p>
                 </div>
                 <div class="col-sm-3"></div>
             </div>
