@@ -1,7 +1,7 @@
 <?php 
 session_start();
-if (!isset($_POST['password'])) {
-    echo "<h1> false </h1>";
+if (!isset($_SESSION['password'])) {
+    echo "no password set";
 }
 function submit() {
     $msg = '';

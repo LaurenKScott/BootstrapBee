@@ -1,8 +1,9 @@
 <?php 
 session_start();
+$_SESSION['err'] = '';
 $try_pass = "";
 
-function validate($data){
+function cleanup($data){
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
@@ -10,25 +11,36 @@ function validate($data){
 }
 
 // PLACEHOLDER. NEED TO ADD HASHING FUNCTION FOR LATER
-$infpassword = 'infants2022';
-$prepassword = 'preschool2022';
-$adminpassword = 'busybee2022!';
-$errormsg = '';
-if (isset($_POST['password'])) {
-    $try_pass = validate($_POST['password']);
+function validate($try_pass) {
+    $infpassword = 'infants2022';
+    $prepassword = 'preschool2022';
+    $adminpassword = 'busybee2022!';
+    $errormsg = '';
     if ($try_pass == $adminpassword) {
+        $_SESSION['password'] = $try_pass;
         header('Location: upload.php');
     }
     elseif ($try_pass == $infpassword) {
+        $_SESSION['password'] = $try_pass;
         header('Location: inftod.php');
     }
     elseif ($try_pass == $prepassword) {
-        header('Location: prek.html');
+        $_SESSION['password'] = $try_pass;
+        header('Location: prek.php');
     }
     else {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $errormsg = "Incorrect password";
         }
+    }
+    return $errormsg;
+}
+
+if (isset($_POST['submit'])) {
+    
+    if (isset($_POST['password'])) {
+        $try_pass = cleanup($_POST['password']);
+        validate($try_pass);
     }
 }
 ?>
@@ -103,26 +115,26 @@ if (isset($_POST['password'])) {
             </div>
         </div>
         <div class="row">
-            
-            <div class ="col text-center" id="portal">
-                <p class="lead">If you are a Busy Bee parent, use the portal below to find information on your child's class!</p>
-                <h2>Class Portal Login</h2>
-                <form title='login' method='POST' action='' autocomplete='off'>
-                <div style='display:inline-block;'>
-                    <label for='password'>Password</label>
-                    <input type='password' name='password' id='password' required aria-required='true'> 
+            <div class ="col-sm-3" id="portal">
+                <h2>Class Portal</h2>
+                <p class="p-0 mt-0">If you are a Busy Bee parent, use this portal access information from your child's class</p>
+                <form class="mx-auto" title='login' method='POST'
+                 action='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>' autocomplete='off'>
+                <div class="form-floating">
+                    <input class="form-control" type='password' name='password' id='password' required aria-required='true'> 
+                    <label class="form-label" for='password'>Password</label>
                 </div>
                 <button class='btn btn-light border-dark' type="submit" name='submit'>Submit</button>
                 </form>
-                <p id="portal-instr">Type your class password here</p> 
+                
             </div>
-           
+            <div class="col-sm-9"></div>
         </div>
 
         
         <!-- END PORTAL LOGIN -->
         <div class="row">
-            <div class="col d-flex justify-content-right">
+            <div class="col d-flex justify-content-start">
             <ul class="list-unstyled">
                     <h3>Resources</h3>
                     <li><a class="form-links" href="#">Good Manners</a></li>
@@ -135,7 +147,7 @@ if (isset($_POST['password'])) {
             </div>
         </div>
         <div class="row">
-            <div class="col d-flex justify-content-right">
+            <div class="col d-flex justify-content-start">
             <ul class="list-unstyled">
                     <h3>Forms</h3>
                     <li><a class="form-links" href="/assets/PhysicalForm.pdf" target="_blank">Physical</a></li>

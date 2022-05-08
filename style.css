@@ -81,9 +81,7 @@ header {
     text-align: center;
     /*background-color: aquamarine;*/
 }
-#portal-instr {
-    font-style: italic;
-}
+
 #archive {
     transform: translateY(10%);
 }
