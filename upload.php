@@ -2,7 +2,7 @@
 function submit() {
     $msg = '';
     if (isset($_POST["submit"])){
-        $target_path = "/Users/lauren/Documents/PROJECTS/BootstrapBee/assets/uploads/";
+        $target_path = "assets/uploads/";
         $target_file = $target_path.basename( $_FILES['try_file']['name']);
         if(move_uploaded_file($_FILES['try_file']['tmp_name'], $target_file)) {
             $msg = 'Upload successful';
