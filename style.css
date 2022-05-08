@@ -107,11 +107,13 @@ header {
 }
 
 .pro-wrap {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     border-radius: 50%;
     width: 90%; 
-    height: max-content;
+    height: 180px;
     background-color: rgb(255, 77, 0);
 }
 .programs {
@@ -188,4 +190,12 @@ footer {
     background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.8);
     padding: 0;
+}
+#hours > * {
+    margin: 0;
+    padding-top: 0;
+    padding: 0.25rem;
+}
+#hours > h4 {
+    padding-bottom: 1rem;
 }

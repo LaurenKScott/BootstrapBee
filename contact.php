@@ -20,14 +20,14 @@
     </head>
 
     <!-- BODY: THE START OF THE PAGE CONTENT -->
-    <body class="container-fluid">
+    <body>
 
         <!-- PHP INFORMATION AND CONTENT -->
         <?php include("handler.php");?>
         <a class="sr-only sr-only-focusable visually-hidden" aria-label="skip navigation" href="#main">
             Skip to main content</a>
          <!-- HEADER: LOGO, NAV -->
-        <header class="">
+        <header class="container-fluid">
             <!-- NAVIGATION BAR WITH STICKY POSITION-->
             <nav role="navigation" class="navbar navbar-expand-sm navbar-light">
             <div class="container-fluid">
