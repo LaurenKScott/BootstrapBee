@@ -146,9 +146,12 @@ if (isset($_POST['password'])) {
     </main>
     <footer class="mt-5">
         <!-- SOCIALS -->
-        <div class="row">
+        <div class="row p-3">
             <div class="col-sm-3 text-center">
-                <h6>Content</h6>
+                <h4>Hours</h4>
+                <p><em>Open year-round!</em></p>
+                <p>Monday-Friday</p>
+                <p>7am - 5pm</p>
             </div>
             <div class="col-sm-6 text-center">
                 <ul class="btn-group" id="socials" role="group" aria-label="social media links">
@@ -170,18 +173,17 @@ if (isset($_POST['password'])) {
                     </a>   
                 </ul>
             </div>
-            <!-- END SOICALS --> 
-
             <div class="col-sm-3"></div>
             <div class="row">
                 <div class="col-sm-3"></div>
                 <!-- COPYRIGHT INFO -->
                 <div class="col-sm-6 text-center">
-                    <p class="text-muted">Copyright Busy Bee Preschool 2022</p>
+                    <p class="text-muted">Copyright Busy Bee Preschool 2022. All rights reserved.</p>
                 </div>
                 <div class="col-sm-3"></div>
             </div>
         </div>
+        <!-- END SOICALS --> 
 
     </footer>
     </body>
