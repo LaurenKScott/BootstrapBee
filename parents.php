@@ -13,6 +13,7 @@ function validate($data){
 $infpassword = 'infants2022';
 $prepassword = 'preschool2022';
 $adminpassword = 'busybee2022!';
+$errormsg = '';
 if (isset($_POST['password'])) {
     $try_pass = validate($_POST['password']);
     if ($try_pass == $adminpassword) {

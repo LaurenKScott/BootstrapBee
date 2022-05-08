@@ -1,5 +1,8 @@
 <?php 
 session_start();
+if (!isset($_SESSION['password'])) {
+    echo "<h1> false </h1>";
+}
 function submit() {
     $msg = '';
     if (isset($_POST["submit"])){
