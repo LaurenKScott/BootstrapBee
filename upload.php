@@ -1,6 +1,6 @@
 <?php 
 session_start();
-if (!isset($_SESSION['password'])) {
+if (!isset($_POST['password'])) {
     echo "<h1> false </h1>";
 }
 function submit() {
@@ -94,7 +94,7 @@ function submit() {
                 Busy Bee File Uploader</h1>
         </div>
         <div class="row text-center">
-            <p class="lead bg-danger"> Important: Be sure to review each file before posting
+            <p class="lead"> Important: Be sure to review each file before posting
             </p>
         </div>
         <div class="text-center">
