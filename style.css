@@ -1,11 +1,12 @@
 body {
-    background: rgb(255,255,255);
     /*
     background: linear-gradient(
     rgb(74, 254, 152) 45%, rgb(0, 234, 255) 100%); 
     */
-    background: linear-gradient(180deg, 
-    rgba(68,233,100,1) 0%, rgba(0,179,255,1) 100%);
+    background: rgb(253,255,100);
+    background: linear-gradient(180deg,
+    rgba(253,255,100,1) 0%, rgba(157,250,52,1) 57%, 
+    rgba(46,203,39,1) 100%);
     color:rgb(43, 0, 123);
     font-size: 1.05em;
 }
@@ -48,8 +49,8 @@ header {
    text-align: center;
 }
 #fb-jumbo {
-    border-radius: 10px;
-    background-color: rgb(255, 241, 82);
+    border-radius: 15px;
+    background-color: rgb(255, 186, 67);
 }
 #fb-jumbo > h3 > a{
     text-decoration: none;
@@ -63,8 +64,7 @@ header {
     max-height: min-content;
 }
 #contact-form {
-    background-color: rgb(92, 24, 228);
-    background-color: rgba(92, 24, 228, 0.8);
+    background-color: rgb(255, 83, 9);
     color: white;
     border-radius: 5%;
 }

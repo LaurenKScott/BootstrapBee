@@ -2,6 +2,7 @@
 session_start();
 $_SESSION['err'] = '';
 $try_pass = "";
+echo session_id();
 
 function cleanup($data){
     $data = trim($data);
@@ -18,15 +19,17 @@ function validate($try_pass) {
     $errormsg = '';
     if ($try_pass == $adminpassword) {
         $_SESSION['password'] = $try_pass;
-        header('Location: upload.php');
+        header('Location: upload.php' . SID);
+
     }
     elseif ($try_pass == $infpassword) {
         $_SESSION['password'] = $try_pass;
-        header('Location: inftod.php');
+        header('Location: inftod.php' . SID);
+
     }
     elseif ($try_pass == $prepassword) {
         $_SESSION['password'] = $try_pass;
-        header('Location: prek.php');
+        header('Location: prek.php' . SID);
     }
     else {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {

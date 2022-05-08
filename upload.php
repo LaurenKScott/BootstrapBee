@@ -3,6 +3,8 @@ session_start();
 if (!isset($_SESSION['password'])) {
     echo "no password set";
 }
+
+echo session_id();
 function submit() {
     $msg = '';
     if (isset($_POST["submit"])){

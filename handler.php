@@ -1,5 +1,4 @@
 <?php 
-session_start();
 
 function clean($data) {
     $data = trim($data);
