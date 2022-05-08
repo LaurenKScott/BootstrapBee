@@ -1,9 +1,20 @@
 <?php 
+session_start();
 function submit() {
     $msg = '';
     if (isset($_POST["submit"])){
-        $target_path = "/Users/lauren/Documents/PROJECTS/BootstrapBee/uploads/";
-        $sub_path = '';
+        $target_path = '../uploads/';
+        switch ($_POST["class"]) {
+            case "class-1":
+                $sub_path = 'class1/';
+                break;
+            case "class-2":
+                $sub_path = 'class2/';
+                break;
+            default:
+                $sub_path = '';
+        }
+        $target_path = $target_path . $sub_path;
         $target_file = $target_path.basename( $_FILES['try_file']['name']);
         if(move_uploaded_file($_FILES['try_file']['tmp_name'], $target_file)) {
             $msg = 'Upload successful';
@@ -80,7 +91,7 @@ function submit() {
                 Busy Bee File Uploader</h1>
         </div>
         <div class="row text-center">
-            <p class="lead"> Important: Be sure to review each file before posting
+            <p class="lead bg-danger"> Important: Be sure to review each file before posting
             </p>
         </div>
         <div class="text-center">
@@ -94,11 +105,11 @@ function submit() {
                     <input class="form-control" type="file" id="try_File" name="try_file" required>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline d-inline">
-                    <input type="radio" id="class-select1" name="class1" class="custom-control-input" required>
+                    <input class="custom-control-input" type="radio" id="class-select1" name="class" value="class-1" required>
                     <label class="custom-control-label" for="class-select1">Class 1</label>
                 </div>
                 <div class="custom-control custom-radio custom-control-inline d-inline">
-                    <input type="radio" id="class-select2" name="class2" class="custom-control-input" required>
+                    <input class="custom-control-input" type="radio" id="class-select2" name="class" value="class-2"  required>
                     <label class="custom-control-label" for="class-select2">Class 2</label>
                 </div>
                 <div class="d-block w-100">

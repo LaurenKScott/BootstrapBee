@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="https://github.com/LaurenKScott, Busy Bee Preschool">
-    <meta name="description" content="Parent Resources page for Busy Bee Child Care and Preschool.
-    Busy Bee is an independently owned and operated child care center, providing the best quality
-    education on the South Shore since 1989">
-    <meta name="robots" content="index, follow">
-    <title>Parents - Busy Bee Child Care & Preschool</title>
-    <link rel="icon" href="/assets/beeicon.jpg">
-    <!-- BOOTSTRAP STYLESHEET AND SCRIPT LINKS (CDN)-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</head>
 <?php 
+session_start();
 $try_pass = "";
 
 function validate($data){
@@ -49,6 +31,26 @@ if (isset($_POST['password'])) {
     }
 }
 ?>
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="https://github.com/LaurenKScott, Busy Bee Preschool">
+    <meta name="description" content="Parent Resources page for Busy Bee Child Care and Preschool.
+    Busy Bee is an independently owned and operated child care center, providing the best quality
+    education on the South Shore since 1989">
+    <meta name="robots" content="index, follow">
+    <title>Parents - Busy Bee Child Care & Preschool</title>
+    <link rel="icon" href="/assets/beeicon.jpg">
+    <!-- BOOTSTRAP STYLESHEET AND SCRIPT LINKS (CDN)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
 <body>  
     <a class="sr-only sr-only-focusable visually-hidden" aria-label="skip navigation" href="#main">
             Skip to main content</a>
