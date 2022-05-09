@@ -114,11 +114,12 @@ if (isset($_POST['submit']) && (isset($_POST['password']))) {
         <div class="row">
             <div class ="text-center" id="portal">
                 <h2>Class Portal</h2>
-                <p class="p-0 mt-0">If you are a Busy Bee parent, use this portal access information from your child's class</p>
+                <p class="p-0 mt-0">If you are a Busy Bee parent, use this portal to access your class page</p>
                 <form class="mx-auto" title='login' method='POST'
                  action='<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>' autocomplete='off'>
                 <div class="form-floating">
-                    <input class="form-control" type='password' name='password' id='password' required aria-required='true'> 
+                    <input class="form-control" type='password' placeholder=''  
+                    name='password' id='password' required aria-required='true'> 
                     <label class="form-label" for='password'>Password</label>
                 </div>
                 <button class='btn btn-light border-dark' type="submit" name='submit'>Submit</button>
