@@ -1,5 +1,11 @@
 <?php
 session_start();
+$page_pass = 'preschool2022';
+if (!((isset($_SESSION['login'])) && ($_SESSION['login'] == true) 
+&& ($_SESSION['password'] === $page_pass))) {
+    header('Location: parents.php');
+}
+session_destroy();
 ?>
 <!DOCTYPE html>
 <html lang="en">

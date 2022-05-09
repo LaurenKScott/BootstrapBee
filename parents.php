@@ -1,8 +1,6 @@
 <?php 
 session_start();
-$_SESSION['err'] = '';
 $try_pass = "";
-echo session_id();
 
 function cleanup($data){
     $data = trim($data);
@@ -18,18 +16,17 @@ function validate($try_pass) {
     $adminpassword = 'busybee2022!';
     $errormsg = '';
     if ($try_pass == $adminpassword) {
-        $_SESSION['password'] = $try_pass;
-        header('Location: upload.php' . SID);
-
+        $_SESSION['login'] = true;
+        header('Location: upload.php');
     }
     elseif ($try_pass == $infpassword) {
-        $_SESSION['password'] = $try_pass;
-        header('Location: inftod.php' . SID);
+        $_SESSION['login'] = true;
+        header('Location: inftod.php');
 
     }
     elseif ($try_pass == $prepassword) {
-        $_SESSION['password'] = $try_pass;
-        header('Location: prek.php' . SID);
+        $_SESSION['login'] = true;
+        header('Location: prek.php');
     }
     else {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -39,12 +36,9 @@ function validate($try_pass) {
     return $errormsg;
 }
 
-if (isset($_POST['submit'])) {
-    
-    if (isset($_POST['password'])) {
-        $try_pass = cleanup($_POST['password']);
-        validate($try_pass);
-    }
+if (isset($_POST['submit']) && (isset($_POST['password']))) {
+    $try_pass = cleanup($_POST['password']);
+    validate($try_pass);
 }
 ?>
 <!DOCTYPE html>
@@ -118,7 +112,7 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
         <div class="row">
-            <div class ="col-sm-3" id="portal">
+            <div class ="text-center" id="portal">
                 <h2>Class Portal</h2>
                 <p class="p-0 mt-0">If you are a Busy Bee parent, use this portal access information from your child's class</p>
                 <form class="mx-auto" title='login' method='POST'
@@ -129,9 +123,7 @@ if (isset($_POST['submit'])) {
                 </div>
                 <button class='btn btn-light border-dark' type="submit" name='submit'>Submit</button>
                 </form>
-                
             </div>
-            <div class="col-sm-9"></div>
         </div>
 
         

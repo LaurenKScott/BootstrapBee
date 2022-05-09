@@ -1,10 +1,11 @@
 <?php 
 session_start();
-if (!isset($_SESSION['password'])) {
-    echo "no password set";
+$page_pass = 'busybee2022!';
+if (!((isset($_SESSION['login'])) && ($_SESSION['login'] == true) 
+&& ($_SESSION['password'] === $page_pass))) {
+    header('Location: parents.php');
 }
-
-echo session_id();
+session_destroy();
 function submit() {
     $msg = '';
     if (isset($_POST["submit"])){
