@@ -3,7 +3,7 @@ body {
     rgba(243, 246, 41, 0.75)10%, rgba(235, 82, 0, 0.7) 90%), 
     url("assets/beevector.png");
     color:rgb(43, 0, 123);
-    background-size: cover;
+    background-size: 110%;
     font-size: 1.05em;
 }
 body > * {

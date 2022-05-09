@@ -17,15 +17,18 @@ function validate($try_pass) {
     $errormsg = '';
     if ($try_pass == $adminpassword) {
         $_SESSION['login'] = true;
+        $_SESSION['password'] = $try_pass;
         header('Location: upload.php');
     }
     elseif ($try_pass == $infpassword) {
         $_SESSION['login'] = true;
+        $_SESSION['password'] = $try_pass;
         header('Location: inftod.php');
 
     }
     elseif ($try_pass == $prepassword) {
         $_SESSION['login'] = true;
+        $_SESSION['password'] = $try_pass;
         header('Location: prek.php');
     }
     else {
