@@ -14,7 +14,7 @@ session_start();
         education on the South Shore since 1989">
         <meta name="robots" content="index, follow">
         <title>Contact Us - Busy Bee Child Care & Preschool</title>
-        <link rel="icon" href="/assets/bee-icon.jpg">
+        <link rel="icon" href="/assets/beeicon.jpg">
         <!-- BOOTSTRAP STYLESHEET AND SCRIPT LINKS (CDN)-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
