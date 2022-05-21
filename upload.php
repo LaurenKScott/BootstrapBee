@@ -3,9 +3,10 @@ session_start();
 $page_pass = 'busybee2022!';
 if (!((isset($_SESSION['login'])) && ($_SESSION['login'] == true) 
 && ($_SESSION['password'] === $page_pass))) {
+    session_destroy();
     header('Location: parents.php');
 }
-session_destroy();
+
 function submit() {
     $msg = '';
     if (isset($_POST["submit"])){
@@ -17,19 +18,23 @@ function submit() {
             case "class-2":
                 $sub_path = 'class2/';
                 break;
-            default:
-                $sub_path = '';
         }
         $target_path = $target_path . $sub_path;
-        $target_file = $target_path.basename( $_FILES['try_file']['name']);
-        if(move_uploaded_file($_FILES['try_file']['tmp_name'], $target_file)) {
-            $msg = 'Upload successful';
-        }else {
-            $msg = 'Upload failed';
+        $file_count = count($_FILES["userfile"]["name"]);
+        for ($i=0; $i<$file_count;$i++){
+            $target_file = $target_path.basename($_FILES['userfile']['name'][$i]);
+
+            if(move_uploaded_file($_FILES['userfile']['tmp_name'][$i], $target_file)) {
+                $msg = 'Upload successful';
+            }else {
+                $msg = 'Upload failed';
         }
+        }
+        
     }
     return $msg;
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,6 +54,7 @@ function submit() {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
 </head>
 <body>
     <header class="container-fluid">
@@ -107,9 +113,11 @@ function submit() {
                     <input class="form-control" type="text" id="post-text" name="post-text" placeholder=""> 
                     <label for="post-text" class="form-label">Write something here...</label>
                 </div>
-                <div class="">
-                    <input class="form-control" type="file" id="try_File" name="try_file" required>
+                <div>
+                    <input class="form-control" type="file" id="userfile" name="userfile[]"
+                    onchange="previewFiles()" multiple required>
                 </div>
+                <div id="preview"></div>
                 <div class="custom-control custom-radio custom-control-inline d-inline">
                     <input class="custom-control-input" type="radio" id="class-select1" name="class" value="class-1" required>
                     <label class="custom-control-label" for="class-select1">Class 1</label>
@@ -118,13 +126,14 @@ function submit() {
                     <input class="custom-control-input" type="radio" id="class-select2" name="class" value="class-2"  required>
                     <label class="custom-control-label" for="class-select2">Class 2</label>
                 </div>
-                <div class="d-block w-100">
-                <input type="submit" value="Submit" name="submit" id="upload-submit">
+                <div class="w-100">
+                <input type="submit" class="w-50 p-1 mx-auto" value="SUBMIT " name="submit" id="upload-submit">
                 </div>
             </form>
         </div>
         <div class="row text-center" id="form-post">
             <?php
+            # $preview = preview()
             $msg = submit();
             echo "<h3>" . $msg . "</h3>";
             ?>
@@ -174,4 +183,36 @@ function submit() {
 
     </footer>
 </body>
+<script type="text/javascript">
+    function previewFiles() {
+
+        var preview = document.querySelector('#preview');
+        var files   = document.querySelector('input[type=file]').files;
+
+        function readAndPreview(file) {
+
+            // Make sure `file.name` matches our extensions criteria
+            if ( /\.(jpe?g|png|gif)$/i.test(file.name) ) {
+                var reader = new FileReader();
+
+                reader.addEventListener("load", function () {
+                var image = new Image();
+                image.height = 100;
+                image.title = file.name;
+                image.src = this.result;
+                preview.appendChild( image );
+                }, false);
+
+                reader.readAsDataURL(file);
+            }
+
+        }
+
+        if (files) {
+        [].forEach.call(files, readAndPreview);
+        }
+
+    }
+
+</script>
 </html>

@@ -167,6 +167,9 @@ header {
     width: 50%;
     margin: auto;
 }
+#userfile {
+    padding: 1%;
+}
 #socials {
     list-style-type: none;
     width: 80%;

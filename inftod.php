@@ -100,12 +100,12 @@ session_destroy();
                     <li class="list-group-item p-1">
                         <a href="/assets/3_2022_IT_Newsletter.pdf" target="current" onclick="ChangeMonth('March 2022')">March 2022</a>
                     </li>
-                    <li class="list-group-item p-1"><a href="#" target="current">February 2022</a></li>
-                    <li class="list-group-item p-1"><a href="#" target="current">January 2022</a></li>
-                    <li class="list-group-item p-1"><a href="#" target="current">December 2021</a></li>
-                    <li class="list-group-item p-1"><a href="#" target="current">November 2021</a></li>
-                    <li class="list-group-item p-1"><a href="#" target="current">October 2021</a></li>
-                    <li class="list-group-item p-1"><a href="#" target="current">September 2021</a></li>
+                    <li class="list-group-item p-1"><a href="" target="current">February 2022</a></li>
+                    <li class="list-group-item p-1"><a href="" target="current">January 2022</a></li>
+                    <li class="list-group-item p-1"><a href="" target="current">December 2021</a></li>
+                    <li class="list-group-item p-1"><a href="" target="current">November 2021</a></li>
+                    <li class="list-group-item p-1"><a href="" target="current">October 2021</a></li>
+                    <li class="list-group-item p-1"><a href="" target="current">September 2021</a></li>
                 </ol>
             </div>
         </aside>
