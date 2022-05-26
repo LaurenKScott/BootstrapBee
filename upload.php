@@ -54,7 +54,39 @@ function submit() {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap Font Icon CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    
+    <script type="text/javascript">
+    function previewFiles() {
+
+        var preview = document.querySelector('#preview');
+        var files   = document.querySelector('input[type=file]').files;
+
+        function readAndPreview(file) {
+
+            // Make sure `file.name` matches our extensions criteria
+            if ( /\.(jpe?g|png|gif)$/i.test(file.name) ) {
+                var reader = new FileReader();
+
+                reader.addEventListener("load", function () {
+                var image = new Image();
+                image.height = 200px;
+		image.width = auto;
+                image.title = file.name;
+                image.src = this.result;
+                preview.appendChild( image );
+                }, false);
+
+                reader.readAsDataURL(file);
+            }
+
+        }
+
+        if (files) {
+        [].forEach.call(files, readAndPreview);
+        }
+
+    }
+
+</script>
 </head>
 <body>
     <header class="container-fluid">
@@ -183,37 +215,5 @@ function submit() {
 
     </footer>
 </body>
-<script type="text/javascript">
-    function previewFiles() {
 
-        var preview = document.querySelector('#preview');
-        var files   = document.querySelector('input[type=file]').files;
-
-        function readAndPreview(file) {
-
-            // Make sure `file.name` matches our extensions criteria
-            if ( /\.(jpe?g|png|gif)$/i.test(file.name) ) {
-                var reader = new FileReader();
-
-                reader.addEventListener("load", function () {
-                var image = new Image();
-                image.height = 200px;
-		image.width = auto;
-                image.title = file.name;
-                image.src = this.result;
-                preview.appendChild( image );
-                }, false);
-
-                reader.readAsDataURL(file);
-            }
-
-        }
-
-        if (files) {
-        [].forEach.call(files, readAndPreview);
-        }
-
-    }
-
-</script>
 </html>
