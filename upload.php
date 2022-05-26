@@ -68,8 +68,8 @@ function submit() {
 
                 reader.addEventListener("load", function () {
                 var image = new Image();
-                image.height = 200px;
-		image.width = auto;
+                image.height = 200;
+		        image.width = auto;
                 image.title = file.name;
                 image.src = this.result;
                 preview.appendChild( image );
